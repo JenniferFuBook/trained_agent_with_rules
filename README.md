@@ -1,15 +1,18 @@
-# 🤖 GPT-2 Training Guide for Beginners
+# 🤖 GPT Agent - Train & Deploy Your Own Language Model
 
-A complete, beginner-friendly guide to fine-tuning GPT-2 on your own text data.
+A complete, beginner-friendly toolkit for fine-tuning GPT-2 on custom text data and generating AI-powered text responses. This repository includes everything you need to train a language model and use it for inference.
 
 ## 📖 Table of Contents
 
 - [What is This?](#what-is-this)
+- [Features](#features)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Project Structure](#project-structure)
-- [Quick Start](#quick-start)
+- [Quick Start - Training](#quick-start---training)
+- [Quick Start - Using Your Model](#quick-start---using-your-model)
 - [Understanding the Files](#understanding-the-files)
+- [Training Data](#training-data)
 - [Configuration Guide](#configuration-guide)
 - [Troubleshooting](#troubleshooting)
 - [Advanced Topics](#advanced-topics)
@@ -18,7 +21,7 @@ A complete, beginner-friendly guide to fine-tuning GPT-2 on your own text data.
 
 ## 🎯 What is This?
 
-This project helps you **fine-tune** a GPT-2 language model on your own text data. Fine-tuning means teaching an existing AI model to write in a specific style or about specific topics by training it on your custom text.
+This project is a complete language model training and deployment toolkit that helps you **fine-tune** GPT-2 on your own text data and generate text with the trained model. Fine-tuning means teaching an existing AI model to write in a specific style or about specific topics by training it on your custom text.
 
 ### What You Can Do With a Fine-Tuned Model:
 
@@ -33,6 +36,29 @@ This project helps you **fine-tune** a GPT-2 language model on your own text dat
 - Train on customer support tickets to build a support bot
 - Train on code repositories to create a code assistant
 - Train on your own writing to create a personal writing assistant
+
+---
+
+## ✨ Features
+
+### Training Features:
+- 🎓 **Easy GPT-2 Fine-Tuning**: Simple scripts to train models on your custom data
+- 🐳 **Docker Support**: Containerized training environment for consistent results
+- 📊 **Progress Tracking**: Real-time training progress with loss metrics
+- ⚙️ **Configurable**: Adjust model size, batch size, learning rate, and more
+- 💾 **Auto-Save**: Trained models automatically saved for later use
+
+### Inference Features:
+- 🚀 **Simple Model Loading**: Easy-to-use script for text generation
+- 🎨 **Customizable Generation**: Control output length, creativity, and style
+- 🐳 **Docker Inference**: Run model in isolated container
+- 📝 **Sample Data Included**: Pre-configured training data to get started
+
+### Developer Features:
+- 📖 **Fully Commented Code**: Every line explained for learning
+- 🛠️ **Multiple Run Methods**: Shell scripts, Python, or Docker
+- 🔧 **macOS Compatible**: Fixes for common macOS threading issues
+- 📚 **Comprehensive Documentation**: Beginner-friendly guides
 
 ---
 
@@ -83,30 +109,48 @@ python3 -c "import torch, transformers; print('✅ Installation successful!')"
 ## 📁 Project Structure
 
 ```
-agent/
+gpt-agent/
 │
-├── 📄 train.py              # Main training script (fully commented)
-├── 📄 run_train.sh          # Shell launcher for macOS/Linux
+├── 🎓 Training Scripts
+│   ├── 📄 train.py              # Main training script (fully commented)
+│   ├── 📄 run_train.sh          # Shell launcher for training (macOS/Linux)
+│   └── 🐳 docker-compose.yml    # Docker training orchestration
 │
-├── 🐳 Dockerfile            # Docker container definition
-├── 🐳 docker-compose.yml    # Docker orchestration config
-├── 📋 requirements.txt      # Python package dependencies
+├── 🚀 Inference Scripts
+│   ├── 📄 use_model.py          # Model inference script (fully commented)
+│   └── 📄 docker_use_model.sh   # Shell script for Docker inference
 │
-├── 📁 data/                 # ⭐ PUT YOUR .txt FILES HERE
-│   └── example.txt          # Your training data
+├── 🐳 Docker Configuration
+│   ├── 📄 Dockerfile            # Docker container definition
+│   └── 📄 .dockerignore         # Files to exclude from Docker
 │
-├── 📁 agent-gpt2/           # Trained model saved here (auto-created)
-│   ├── config.json
-│   ├── pytorch_model.bin
-│   └── ...
+├── 📋 Configuration
+│   ├── 📄 requirements.txt      # Python package dependencies
+│   └── 📄 .gitignore            # Git ignore rules
 │
-├── 📄 README_TRAINING.md    # This file
-└── 📄 .dockerignore         # Files to exclude from Docker
+├── 📁 data/                     # ⭐ Training data folder
+│   ├── 📄 agent_behavior.txt    # Sample: Agent behavior patterns
+│   ├── 📄 conversation.txt      # Sample: Conversational data
+│   ├── 📄 instructions.txt      # Sample: Instruction-response pairs
+│   ├── 📄 module_commands.txt   # Sample: Command patterns
+│   └── 📄 README.md             # Data folder documentation
+│
+├── 📁 agent-gpt2/               # 🔒 Trained model output (gitignored)
+│   ├── config.json              # Model configuration
+│   ├── model.safetensors        # Model weights (~300MB)
+│   ├── tokenizer.json           # Tokenizer configuration
+│   └── ...                      # Other model files
+│
+└── 📄 README.md                 # This file
 ```
+
+### Key Folders:
+- **`data/`**: Put your `.txt` training files here
+- **`agent-gpt2/`**: Your trained model saves here (excluded from git due to size)
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start - Training
 
 ### Step 1: Prepare Your Training Data
 
@@ -198,9 +242,55 @@ Epoch 2/2: 100%|████████████| 75/75 [02:10<00:00,  1.74s
 - **Progress bar**: Shows current progress through the data
 - **Average loss**: Overall performance for that epoch
 
-### Step 4: Use Your Trained Model
+### Step 4: Verify Training Completed
 
-After training, test your model:
+After training finishes, verify your model was saved:
+
+```bash
+# Check that model files exist
+ls -lh agent-gpt2/
+
+# You should see:
+# - config.json
+# - model.safetensors (or pytorch_model.bin)
+# - tokenizer.json
+# - vocab.json
+# ... and other files
+```
+
+---
+
+## 🚀 Quick Start - Using Your Model
+
+Once you've trained a model (or if you have a pre-trained model in `agent-gpt2/`), you can generate text using these methods:
+
+### Method 1: Using the Inference Script (Recommended) ⭐
+
+The easiest way to use your model:
+
+```bash
+# Run the inference script
+python3 use_model.py
+```
+
+**To customize the prompt:**
+1. Open `use_model.py` in a text editor
+2. Find line 67 (the `prompt` variable)
+3. Change `"Large language models are"` to your desired prompt
+4. Save and run again
+
+### Method 2: Docker Inference
+
+Safest method, avoids environment issues:
+
+```bash
+# Run model in Docker container
+./docker_use_model.sh
+```
+
+### Method 3: Interactive Python
+
+For experimentation and custom generation:
 
 ```python
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
@@ -209,26 +299,53 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 model = GPT2LMHeadModel.from_pretrained("./agent-gpt2")
 tokenizer = GPT2TokenizerFast.from_pretrained("./agent-gpt2")
 
+# Set padding token
+tokenizer.pad_token = tokenizer.eos_token
+
 # Generate text
 prompt = "Once upon a time"
-inputs = tokenizer.encode(prompt, return_tensors="pt")
+inputs = tokenizer(prompt, return_tensors="pt")
 outputs = model.generate(
-    inputs,
+    inputs['input_ids'],
+    attention_mask=inputs['attention_mask'],
     max_length=100,
-    num_return_sequences=1,
+    do_sample=True,
     temperature=0.7,
-    do_sample=True
+    pad_token_id=tokenizer.pad_token_id
 )
 
 # Print generated text
 print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 ```
 
+### Generation Parameters Explained:
+
+- **`max_length`**: Maximum tokens to generate (100 tokens ≈ 75 words)
+- **`temperature`**: Creativity level (0.1 = boring, 1.5 = wild, 0.7 = balanced)
+- **`do_sample`**: Use randomness (True) vs always pick most likely word (False)
+- **`top_p`**: (Optional) Nucleus sampling - consider top 90% of probability mass
+- **`top_k`**: (Optional) Only sample from top K most likely next words
+
+**Example variations:**
+
+```python
+# More creative/random output
+outputs = model.generate(inputs['input_ids'], max_length=150, temperature=1.2, do_sample=True)
+
+# More deterministic/focused output
+outputs = model.generate(inputs['input_ids'], max_length=100, temperature=0.3, do_sample=True)
+
+# Completely deterministic (no randomness)
+outputs = model.generate(inputs['input_ids'], max_length=100, do_sample=False)
+```
+
 ---
 
 ## 📚 Understanding the Files
 
-### 1. `train.py` - Main Training Script
+### Training Files:
+
+#### 1. `train.py` - Main Training Script
 
 **What it does:**
 1. Loads the pre-trained DistilGPT2 model (82M parameters)
@@ -244,7 +361,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 - Lines 109-147: Training loop
 - Lines 150-156: Save model
 
-### 2. `run_train.sh` - Shell Launcher
+#### 2. `run_train.sh` - Training Shell Launcher
 
 **What it does:**
 - Sets environment variables to prevent threading issues on macOS
@@ -254,7 +371,42 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 **Why use it:**
 Prevents the "mutex lock failed" error common on macOS by configuring the environment before Python starts.
 
-### 3. `Dockerfile` - Container Definition
+### Inference Files:
+
+#### 3. `use_model.py` - Model Inference Script
+
+**What it does:**
+1. Sets environment variables to prevent macOS threading errors
+2. Loads your trained model from `agent-gpt2/` folder
+3. Takes a text prompt and generates continuation
+4. Displays the generated text with helpful tips
+
+**Key sections:**
+- Lines 19-31: Environment setup (macOS compatibility)
+- Lines 46-60: Load trained model and tokenizer
+- Lines 67: Prompt configuration (edit this!)
+- Lines 84-91: Text generation with parameters
+- Lines 94: Decode output back to readable text
+
+**How to customize:**
+- Edit line 67 to change the prompt
+- Edit line 87 (max_length) for longer/shorter output
+- Edit line 89 (temperature) for more/less creativity
+
+#### 4. `docker_use_model.sh` - Docker Inference Launcher
+
+**What it does:**
+- Runs `use_model.py` in an isolated Docker container
+- Mounts your `agent-gpt2/` folder and inference script
+- Installs dependencies automatically
+- Avoids all local environment issues
+
+**Why use it:**
+Completely bypasses macOS threading issues and dependency conflicts by running in a clean containerized environment.
+
+### Docker Configuration Files:
+
+#### 5. `Dockerfile` - Container Definition
 
 **What it does:**
 - Defines a clean, isolated environment for training
@@ -264,23 +416,74 @@ Prevents the "mutex lock failed" error common on macOS by configuring the enviro
 **Why use it:**
 Ensures consistent behavior across different computers and operating systems.
 
-### 4. `docker-compose.yml` - Container Orchestration
+#### 6. `docker-compose.yml` - Container Orchestration
 
 **What it does:**
-- Simplifies Docker commands
-- Mounts your data and output folders
+- Simplifies Docker training commands
+- Mounts your `data/` and `agent-gpt2/` folders
 - Sets memory limits (4GB max)
+- Configures volume permissions
 
 **Why use it:**
 Makes Docker easier to use with simple commands like `docker-compose up`.
 
-### 5. `requirements.txt` - Python Dependencies
+#### 7. `requirements.txt` - Python Dependencies
 
 **What it includes:**
 - `torch`: PyTorch deep learning framework
-- `transformers`: Hugging Face transformers library
-- `datasets`: Data loading and processing
-- `tqdm`: Progress bars
+- `transformers`: Hugging Face transformers library (GPT-2 models)
+- `datasets`: Data loading and processing utilities
+- `tqdm`: Progress bars for training feedback
+
+---
+
+## 📊 Training Data
+
+The `data/` folder contains sample training data to help you get started. You can use these as templates or replace them with your own data.
+
+### Included Sample Files:
+
+#### `agent_behavior.txt`
+- Examples of agent behavioral patterns
+- Use for: Training conversational agents, chatbots
+
+#### `conversation.txt`
+- Sample conversational exchanges
+- Use for: Dialogue systems, Q&A models
+
+#### `instructions.txt`
+- Instruction-response pairs
+- Use for: Task-oriented agents, instruction following
+
+#### `module_commands.txt`
+- Command patterns and module interactions
+- Use for: Technical documentation, command-line tools
+
+### Creating Your Own Training Data:
+
+**Best Practices:**
+1. **Format**: Plain `.txt` files with UTF-8 encoding
+2. **Size**: Minimum 1,000 words, ideally 10,000+ words
+3. **Consistency**: Keep writing style and format consistent
+4. **Quality**: Clean, well-formatted text performs better
+5. **Structure**: One concept/example per paragraph works well
+
+**Example data structure:**
+```
+Your first training example goes here.
+This can be multiple sentences.
+
+Second example starts on a new line after a blank line.
+Add as many examples as you want.
+
+Third example with more context.
+```
+
+**What to avoid:**
+- Mixing very different topics or styles
+- Excessive special characters or formatting
+- Binary files or non-text data
+- Copyrighted content without permission
 
 ---
 
@@ -473,6 +676,43 @@ Loss stays high (>5.0) or increases
 - ✅ Check your training data quality
 - ✅ Train for more epochs
 - ✅ Ensure training data is text-based, not binary
+
+#### 7. Model Not Found (Inference)
+
+**Symptoms:**
+```
+FileNotFoundError: agent-gpt2/ not found
+```
+
+**Solutions:**
+- ✅ Train a model first using `docker-compose up` or `python3 train.py`
+- ✅ Verify `agent-gpt2/` folder exists: `ls -lh agent-gpt2/`
+- ✅ Check that model files are present in the folder
+
+#### 8. Generated Text is Nonsense
+
+**Symptoms:**
+Model generates random characters, repeated words, or incoherent text
+
+**Solutions:**
+- ✅ Train for more epochs (try 3-5 epochs)
+- ✅ Use more training data (500+ samples)
+- ✅ Lower temperature: `temperature=0.5` for more focused output
+- ✅ Check training data quality - ensure it's well-formatted
+- ✅ Try a larger base model: `gpt2` instead of `distilgpt2`
+
+#### 9. Permission Denied for Shell Scripts
+
+**Symptoms:**
+```
+bash: ./docker_use_model.sh: Permission denied
+```
+
+**Solution:**
+```bash
+chmod +x docker_use_model.sh
+chmod +x run_train.sh
+```
 
 ---
 
