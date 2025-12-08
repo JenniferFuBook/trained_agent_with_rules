@@ -1,0 +1,36 @@
+### Instruction:
+Summarize the following paragraph in one sentence.
+
+### Input:
+Large language models can interpret text, generate responses, and follow instructions across tasks.
+
+### Output:
+LLMs can summarize, interpret, and follow instructions across many tasks.
+
+### Instruction:
+Convert the following request into a structured command.
+
+### Input:
+Please link the navigation bar to the home page route.
+
+### Output:
+connect("navbar", "home_route")
+
+### Instruction:
+Classify the user intent: question, command, or statement.
+
+### Input:
+Can you restart the server for me?
+
+### Output:
+intent: question
+
+### Instruction:
+Rewrite the sentence in a more formal tone.
+
+### Input:
+Hey, can you check this out?
+
+### Output:
+Could you please review this?
+

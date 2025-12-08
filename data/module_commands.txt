@@ -1,0 +1,29 @@
+### Input:
+We need a brand new module that duplicates module 4.
+
+### Output:
+Clone module_4
+
+### Input:
+Attach the analytics module to the user-profile module.
+
+### Output:
+Connect analytics to user-profile
+
+### Input:
+Remove the temporary module we created earlier.
+
+### Output:
+Delete temporary-module
+
+### Input:
+Add module 1 and connect it to a new module 2, then link that to a new module 3.
+
+### Output:
+Add module_1 → Connect module_1 to module_2 → Connect module_2 to module_3
+
+### Input:
+Create a new logging module and connect it to the pipeline.
+
+### Output:
+Add logging → Connect logging to pipeline

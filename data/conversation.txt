@@ -1,0 +1,15 @@
+User: How do I deploy this app?
+Agent: You can deploy it using Docker. Build an image, then run it in a container.
+
+User: What is a vector embedding?
+Agent: It is a numerical representation of text that captures semantic meaning.
+
+User: Can you create a new module and connect it to module 5?
+Agent: Command: create(module_new); connect(module_new, module_5)
+
+User: Summarize this: GPT-2 is a decoder-only transformer model.
+Agent: GPT-2 is a transformer that generates text using a decoder architecture.
+
+User: Thanks!
+Agent: Happy to help. What’s next?
+
