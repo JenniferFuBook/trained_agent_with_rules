@@ -1,6 +1,6 @@
-# 🤖 GPT Agent - Train & Deploy Your Own Language Model
+# 🤖 Tuning Agent - Train & Deploy Your Own Language Model
 
-A complete, beginner-friendly toolkit for fine-tuning GPT-2 on custom text data and generating AI-powered text responses. This repository includes everything you need to train a language model and use it for inference.
+A complete, beginner-friendly toolkit for fine-tuning LLM on custom text data and generating AI-powered text responses. This repository includes everything you need to train a language model and use it for inference.
 
 ## 📖 Table of Contents
 
@@ -21,7 +21,7 @@ A complete, beginner-friendly toolkit for fine-tuning GPT-2 on custom text data 
 
 ## 🎯 What is This?
 
-This project is a complete language model training and deployment toolkit that helps you **fine-tune** GPT-2 on your own text data and generate text with the trained model. Fine-tuning means teaching an existing AI model to write in a specific style or about specific topics by training it on your custom text.
+This project is a complete language model training and deployment toolkit that helps you **fine-tune** LLM on your own text data and generate text with the trained model. Fine-tuning means teaching an existing AI model to write in a specific style or about specific topics by training it on your custom text.
 
 ### What You Can Do With a Fine-Tuned Model:
 
@@ -42,7 +42,7 @@ This project is a complete language model training and deployment toolkit that h
 ## ✨ Features
 
 ### Training Features:
-- 🎓 **Easy GPT-2 Fine-Tuning**: Simple scripts to train models on your custom data
+- 🎓 **Easy -2 Fine-Tuning**: Simple scripts to train models on your custom data
 - 🐳 **Docker Support**: Containerized training environment for consistent results
 - 📊 **Progress Tracking**: Real-time training progress with loss metrics
 - ⚙️ **Configurable**: Adjust model size, batch size, learning rate, and more
@@ -819,7 +819,7 @@ If you're stuck:
 This project uses:
 - PyTorch (BSD License)
 - Transformers (Apache 2.0 License)
-- GPT-2 models (OpenAI - MIT License)
+- Flan-T5 models (OpenAI - MIT License)
 
 ---
 
