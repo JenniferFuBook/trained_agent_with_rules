@@ -1,4 +1,4 @@
-agent-gpt2/
+agent-trained/
 __pycache__/
 *.pyc
 *.pyo

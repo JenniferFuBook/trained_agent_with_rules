@@ -1,0 +1,100 @@
+Connect {node_a} to {node_b}.
+Link {node_a} with {node_b}.
+Attach {node_a} to {node_b}.
+Create a connection between {node_a} and {node_b}.
+Wire {node_a} into {node_b}.
+Join {node_a} and {node_b}.
+Hook {node_a} up to {node_b}.
+Bridge {node_a} to {node_b}.
+Establish a link from {node_a} to {node_b}.
+Make {node_a} communicate with {node_b}.
+Please connect {node_a} to {node_b}.
+Can you link {node_a} with {node_b}?
+Go ahead and connect {node_a} to {node_b}.
+Set up a connection between {node_a} and {node_b}.
+Ensure {node_a} is connected to {node_b}.
+Connect node {node_a} to node {node_b}.
+Link node {node_a} and node {node_b}.
+Attach node {node_a} to node {node_b}.
+Join node {node_a} with node {node_b}.
+Wire node {node_a} into node {node_b}.
+Add a connection from {node_a} to {node_b}.
+Introduce a link between {node_a} and {node_b}.
+Create an edge from {node_a} to {node_b}.
+Add an edge connecting {node_a} and {node_b}.
+Connect the output of {node_a} to the input of {node_b}.
+Make a connection between {node_a} and {node_b}.
+Tie {node_a} together with {node_b}.
+Bind {node_a} to {node_b}.
+Associate {node_a} with {node_b}.
+Pair {node_a} with {node_b}.
+Route data from {node_a} to {node_b}.
+Send output from {node_a} to {node_b}.
+Pipe {node_a} into {node_b}.
+Forward {node_a} to {node_b}.
+Chain {node_a} to {node_b}.
+Connect service {node_a} to service {node_b}.
+Link component {node_a} with component {node_b}.
+Attach module {node_a} to module {node_b}.
+Join system {node_a} with system {node_b}.
+Wire component {node_a} into component {node_b}.
+Establish communication between {node_a} and {node_b}.
+Allow {node_a} to talk to {node_b}.
+Enable connectivity from {node_a} to {node_b}.
+Make {node_a} dependent on {node_b}.
+Configure {node_a} to connect to {node_b}.
+Create a direct connection from {node_a} to {node_b}.
+Set up a direct link between {node_a} and {node_b}.
+Connect {node_a} directly to {node_b}.
+Add a direct edge between {node_a} and {node_b}.
+Form a direct relationship between {node_a} and {node_b}.
+Connect {node_a} so it feeds into {node_b}.
+Link {node_a} so it outputs to {node_b}.
+Attach {node_a} so it connects with {node_b}.
+Create a linkage between {node_a} and {node_b}.
+Wire {node_a} so it flows into {node_b}.
+Join {node_a} so it connects to {node_b}.
+Hook {node_a} into {node_b}.
+Bridge a connection from {node_a} to {node_b}.
+Establish connectivity between {node_a} and {node_b}.
+Make {node_a} interact with {node_b}.
+Connect the pipeline from {node_a} to {node_b}.
+Link the flow from {node_a} into {node_b}.
+Attach the output of {node_a} with {node_b}.
+Create a wiring between {node_a} and {node_b}.
+Add a linkage connecting {node_a} and {node_b}.
+Set up wiring from {node_a} to {node_b}.
+Join the flow of {node_a} with {node_b}.
+Tie the output of {node_a} to {node_b}.
+Bind the output of {node_a} into {node_b}.
+Associate the output of {node_a} with {node_b}.
+Pair the output of {node_a} to {node_b}.
+Route the output of {node_a} into {node_b}.
+Send data from {node_a} into {node_b}.
+Pipe output from {node_a} into {node_b}.
+Forward output of {node_a} to {node_b}.
+Chain the output of {node_a} into {node_b}.
+Connect the component {node_a} with {node_b}.
+Link the module {node_a} to {node_b}.
+Attach the system {node_a} to {node_b}.
+Join the component {node_a} with {node_b}.
+Wire the module {node_a} into {node_b}.
+Establish a pipeline from {node_a} to {node_b}.
+Enable a pipeline between {node_a} and {node_b}.
+Configure a link from {node_a} to {node_b}.
+Add connectivity from {node_a} into {node_b}.
+Form a pipeline linking {node_a} and {node_b}.
+Connect {node_a} and route it into {node_b}.
+Link {node_a} so it is wired to {node_b}.
+Attach {node_a} so its output goes to {node_b}.
+Create a connection that sends {node_a} into {node_b}.
+Wire {node_a} so it connects directly with {node_b}.
+Join {node_a} into the flow of {node_b}.
+Hook the output of {node_a} up to {node_b}.
+Bridge the output from {node_a} into {node_b}.
+Establish a data path from {node_a} to {node_b}.
+Make {node_a} feed directly into {node_b}.
+Connect the data stream from {node_a} to {node_b}.
+Link the pipeline output of {node_a} with {node_b}.
+Attach the flow coming from {node_a} into {node_b}.
+Form a connection that links {node_a} into {node_b}.

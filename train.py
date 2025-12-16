@@ -1,163 +1,137 @@
 """
-Fine-Tuning GPT-2
+Fine-Tuning Flan-T5
 ======================================
-This script trains (fine-tunes) a GPT-2 language model on your custom text data.
+This script fine-tunes the instruction-tuned T5 model 'google/flan-t5-small'
+on your custom text data to map natural language instructions to structured commands.
 
 What this does:
-1. Loads a pre-trained GPT-2 model
+1. Loads a pre-trained Flan-T5 model
 2. Loads your text files from the 'data/' folder
-3. Trains the model to learn patterns from your text
-4. Saves the trained model to 'agent-gpt2/' folder
+3. Fine-tunes the model on input→output pairs
+4. Saves the trained model to 'agent-trained/' folder
 
 Requirements:
 - Text files in 'data/' folder (e.g., data/example.txt)
-- At least 2GB of available memory
+- Text format: 
+  Each line should be: "### Input: <instruction> ### Output: <structured commands>"
+- At least 4GB of available memory recommended
 """
 
-# Import required libraries
-import torch  # PyTorch - the deep learning framework
-from torch.utils.data import DataLoader  # Helps load data in batches
-from transformers import GPT2LMHeadModel, GPT2TokenizerFast  # GPT-2 model and tokenizer
-from datasets import load_dataset  # Load and process datasets
-from tqdm import tqdm  # Progress bar to see training progress
-
+import torch
+from torch.utils.data import DataLoader
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from torch.optim import AdamW 
+from datasets import load_dataset
+from tqdm import tqdm
+import os
 
 def main():
-    """Main training function - runs when you execute this script"""
+    """Main training function"""
 
-    # ============================================
-    # STEP 1: Load the Model and Tokenizer
-    # ============================================
-    print("📦 Loading model and tokenizer...")
+    # ============================
+    # STEP 1: Load model & tokenizer
+    # ============================
+    print("📦 Loading Flan-T5 model and tokenizer...")
+    model_name = "google/flan-t5-small"
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
-    # Load DistilGPT2 - a smaller, faster version of GPT-2
-    # 82 million parameters (vs 124M for standard GPT-2)
-    model = GPT2LMHeadModel.from_pretrained("distilgpt2")
-    tokenizer = GPT2TokenizerFast.from_pretrained("distilgpt2")
-
-    # Set padding token (needed for batch processing)
-    # We use the end-of-sentence token as the padding token
+    # Ensure model uses pad token
     tokenizer.pad_token = tokenizer.eos_token
+    model.config.pad_token_id = tokenizer.pad_token_id
 
-
-    # ============================================
-    # STEP 2: Load and Prepare Your Data
-    # ============================================
-    print("📂 Loading your text data...")
-
-    # Load all .txt files from the 'data/' folder
+    # ============================
+    # STEP 2: Load dataset
+    # ============================
+    print("📂 Loading dataset from data/*.txt...")
     dataset = load_dataset("text", data_files={"train": "data/*.txt"})["train"]
     print(f"   Found {len(dataset)} text samples")
 
-    # Convert text to numbers (tokenization)
-    # Models work with numbers, not text, so we convert each word/character to a number
-    def tokenize_function(examples):
-        return tokenizer(
-            examples["text"],           # The text to convert
-            truncation=True,            # Cut off text longer than max_length
-            padding="max_length",       # Pad shorter text to max_length
-            max_length=256              # Maximum 256 tokens per sample (saves memory)
+    # ============================
+    # STEP 3: Tokenize data
+    # ============================
+    def preprocess(examples):
+        """
+        Tokenize the input/output text.
+        Assumes each line is: "### Input: ... ### Output: ..."
+        """
+        # Split input/output
+        texts = examples["text"]
+        model_inputs = tokenizer(
+            texts, truncation=True, padding="max_length", max_length=256
         )
+        with tokenizer.as_target_tokenizer():
+            labels = tokenizer(
+                texts, truncation=True, padding="max_length", max_length=256
+            )
+        model_inputs["labels"] = labels["input_ids"]
+        return model_inputs
 
-    print("🔢 Converting text to numbers (tokenizing)...")
-    dataset = dataset.map(tokenize_function, batched=True, remove_columns=["text"])
+    print("🔢 Tokenizing dataset...")
+    tokenized_dataset = dataset.map(preprocess, batched=True, remove_columns=["text"])
 
-    # Limit dataset size to avoid running out of memory
-    # You can increase this if you have more RAM available
-    MAX_SAMPLES = 100
-    if len(dataset) > MAX_SAMPLES:
-        print(f"   Limiting to {MAX_SAMPLES} samples to save memory")
-        dataset = dataset.select(range(MAX_SAMPLES))
+    # Convert to PyTorch tensors
+    tokenized_dataset.set_format(
+        type='torch', columns=['input_ids', 'attention_mask', 'labels']
+    )
 
-    # Convert to PyTorch format
-    dataset.set_format(type='torch', columns=['input_ids', 'attention_mask'])
-
-
-    # ============================================
-    # STEP 3: Configure Training Settings
-    # ============================================
-    print("⚙️  Setting up training configuration...")
-
-    # Move model to CPU (not GPU) - more compatible, less memory
-    device = torch.device('cpu')
-    model.to(device)
-    model.train()  # Put model in training mode
-
-    # Enable gradient checkpointing - trades speed for memory savings
-    model.gradient_checkpointing_enable()
-
-    # Create data loader - feeds data to the model in batches
+    # ============================
+    # STEP 4: DataLoader
+    # ============================
     train_dataloader = DataLoader(
-        dataset,
-        batch_size=1,      # Process 1 sample at a time (low memory usage)
-        shuffle=True,      # Randomize order each epoch
-        num_workers=0      # Don't use multiprocessing (avoids errors on macOS)
+        tokenized_dataset, batch_size=4, shuffle=True, num_workers=0
     )
 
-    # Create optimizer - adjusts model weights to reduce errors
-    # Adam is a popular optimization algorithm
-    optimizer = torch.optim.AdamW(
-        model.parameters(),  # The model weights to optimize
-        lr=5e-5             # Learning rate - how fast the model learns (0.00005)
-    )
+    # ============================
+    # STEP 5: Optimizer
+    # ============================
+    optimizer = AdamW(model.parameters(), lr=5e-5)
 
-    # Training configuration
-    NUM_EPOCHS = 2              # How many times to go through entire dataset
-    ACCUMULATION_STEPS = 2      # Accumulate gradients over 2 steps (simulates batch size of 2)
+    # ============================
+    # STEP 6: Train loop
+    # ============================
+    NUM_EPOCHS = 3
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
+    model.train()
 
-
-    # ============================================
-    # STEP 4: Training Loop
-    # ============================================
-    print(f"\n🚀 Starting training for {NUM_EPOCHS} epochs...\n")
+    print(f"🚀 Training on {device} for {NUM_EPOCHS} epochs...\n")
 
     for epoch in range(NUM_EPOCHS):
-        total_loss = 0  # Track total error for this epoch
+        total_loss = 0
         progress_bar = tqdm(train_dataloader, desc=f"Epoch {epoch+1}/{NUM_EPOCHS}")
 
-        for step, batch in enumerate(progress_bar):
-            # Move data to CPU
-            input_ids = batch['input_ids'].to(device)
-            attention_mask = batch['attention_mask'].to(device)
+        for batch in progress_bar:
+            input_ids = batch["input_ids"].to(device)
+            attention_mask = batch["attention_mask"].to(device)
+            labels = batch["labels"].to(device)
 
-            # Forward pass - model makes predictions
             outputs = model(
                 input_ids=input_ids,
                 attention_mask=attention_mask,
-                labels=input_ids  # For language modeling, labels = inputs
+                labels=labels
             )
 
-            # Calculate loss (error) - how wrong the model's predictions are
-            loss = outputs.loss / ACCUMULATION_STEPS
-
-            # Backward pass - calculate gradients (how to adjust weights)
+            loss = outputs.loss
             loss.backward()
+            optimizer.step()
+            optimizer.zero_grad()
 
-            # Update model weights every ACCUMULATION_STEPS
-            if (step + 1) % ACCUMULATION_STEPS == 0:
-                optimizer.step()        # Update weights
-                optimizer.zero_grad()   # Reset gradients
+            total_loss += loss.item()
+            progress_bar.set_postfix({'loss': f"{loss.item():.4f}"})
 
-            # Track loss for reporting
-            total_loss += loss.item() * ACCUMULATION_STEPS
-            progress_bar.set_postfix({'loss': f"{loss.item() * ACCUMULATION_STEPS:.4f}"})
-
-        # Print epoch summary
         avg_loss = total_loss / len(train_dataloader)
-        print(f"✅ Epoch {epoch+1} completed. Average loss: {avg_loss:.4f}")
+        print(f"✅ Epoch {epoch+1} finished. Average loss: {avg_loss:.4f}")
 
+    # ============================
+    # STEP 7: Save model
+    # ============================
+    save_dir = "./agent-trained"
+    print(f"\n💾 Saving fine-tuned model to {save_dir}...")
+    os.makedirs(save_dir, exist_ok=True)
+    model.save_pretrained(save_dir)
+    tokenizer.save_pretrained(save_dir)
+    print("✨ Training complete!")
 
-    # ============================================
-    # STEP 5: Save the Trained Model
-    # ============================================
-    print("\n💾 Saving trained model...")
-    model.save_pretrained("./agent-gpt2")
-    tokenizer.save_pretrained("./agent-gpt2")
-    print("✨ Training complete! Model saved to './agent-gpt2/'")
-
-
-# This ensures the code only runs when you execute this file directly
-# (not when importing it as a module)
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-

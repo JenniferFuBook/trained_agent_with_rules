@@ -8,7 +8,7 @@ echo "🐳 Running model in Docker container..."
 echo ""
 
 docker run --rm \
-  -v "$(pwd)/agent-gpt2:/app/agent-gpt2" \
+  -v "$(pwd)/agent-trained:/app/agent-trained" \
   -v "$(pwd)/use_model.py:/app/use_model.py" \
   python:3.10-slim \
   bash -c "

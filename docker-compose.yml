@@ -21,7 +21,7 @@ services:
     # Mount folders from your computer into the container
     # Format: ./host-path:/container-path
     volumes:
-      - ./agent-gpt2:/app/agent-gpt2  # Trained model saved here
+      - ./agent-trained:/app/agent-trained  # Trained model saved here
       - ./data:/app/data              # Your training text files
 
     # ============================================

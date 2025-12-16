@@ -1,0 +1,100 @@
+Delete the {node} node.
+Remove the {node} node.
+Please delete {node}.
+Please remove {node} from the system.
+Erase the node called {node}.
+Delete node {node} from the graph.
+Remove {node} from the graph.
+Please remove the node named {node}.
+Delete the {node} component.
+Remove the {node} module.
+Unregister the node {node}.
+Delete {node} from the system.
+Remove {node} as a node.
+Please delete the node {node}.
+Remove node {node}.
+Erase {node} from the graph.
+Delete the node identified as {node}.
+Unregister {node} from the system.
+Remove the component {node}.
+Delete the node {node} from the network.
+Please remove {node}.
+Delete a node called {node}.
+Remove a node named {node}.
+Delete {node} from the diagram.
+Remove the node labeled {node}.
+Delete the {node} entry.
+Remove the graph node {node}.
+Delete {node} from the module list.
+Remove {node} from the structure.
+Delete a component called {node}.
+Remove {node} from the registry.
+Delete the {node} node permanently.
+Remove {node} from the topology.
+Delete the node {node} safely.
+Remove {node} from the system immediately.
+Delete {node} from the configuration.
+Remove the node {node} from usage.
+Delete the {node} node instance.
+Remove the {node} node from the network.
+Delete node {node} quickly.
+Remove the node {node} from the diagram.
+Delete {node} and all references.
+Remove the {node} node completely.
+Delete the {node} node from the project.
+Remove {node} from the workspace.
+Delete the node named {node} permanently.
+Remove {node} from the graph structure.
+Delete {node} from the module.
+Remove the {node} graph node.
+Delete the {node} component from the system.
+Remove {node} as a component.
+Delete the {node} node from memory.
+Remove node {node} immediately.
+Delete the {node} entry from the system.
+Remove the {node} module from the graph.
+Delete {node} as a node.
+Remove {node} from the project graph.
+Delete node {node} from the configuration.
+Remove {node} from the diagram.
+Delete {node} from the network.
+Remove the node {node} from the pipeline.
+Delete the {node} object.
+Remove {node} from the structure.
+Delete node {node} from the workspace.
+Remove {node} from the module list.
+Delete the {node} graph entry.
+Remove {node} from the registry.
+Delete the node {node} safely.
+Remove node {node} permanently.
+Delete {node} as a component from the graph.
+Remove {node} from the system immediately.
+Delete node {node} from the topology.
+Remove the {node} component.
+Delete the node {node} from the system.
+Remove {node} from the project structure.
+Delete {node} from the graph permanently.
+Remove {node} safely.
+Delete node {node} from memory.
+Remove node {node} from usage.
+Delete the node called {node}.
+Remove {node} from the graph safely.
+Delete {node} from the diagram permanently.
+Remove node {node} from configuration.
+Delete the {node} element.
+Remove the {node} node completely.
+Delete {node} as a graph node.
+Remove node {node} from the network.
+Delete node {node} from the registry.
+Remove {node} from the workspace permanently.
+Delete the {node} node object.
+Remove node {node} safely from the graph.
+Delete the node {node} from memory.
+Remove {node} from the topology safely.
+Delete the node {node} from the project.
+Remove {node} as a module.
+Delete the {node} node from the diagram.
+Remove {node} from the system permanently.
+Delete the node {node} from the pipeline.
+Remove {node} from the component list.
+Delete node {node} immediately.

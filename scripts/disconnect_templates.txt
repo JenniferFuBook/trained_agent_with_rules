@@ -1,0 +1,100 @@
+Disconnect {node_a} from {node_b}.
+Unlink {node_a} from {node_b}.
+Detach {node_a} from {node_b}.
+Remove the connection between {node_a} and {node_b}.
+Break the link between {node_a} and {node_b}.
+Sever the connection from {node_a} to {node_b}.
+Separate {node_a} and {node_b}.
+Undo the connection between {node_a} and {node_b}.
+Disable the link between {node_a} and {node_b}.
+Cut the connection from {node_a} to {node_b}.
+Please disconnect {node_a} from {node_b}.
+Can you unlink {node_a} from {node_b}?
+Go ahead and disconnect {node_a} from {node_b}.
+Remove any connection between {node_a} and {node_b}.
+Ensure {node_a} is no longer connected to {node_b}.
+Disconnect node {node_a} from node {node_b}.
+Unlink node {node_a} and node {node_b}.
+Detach node {node_a} from node {node_b}.
+Separate node {node_a} and node {node_b}.
+Break the connection between node {node_a} and node {node_b}.
+Delete the connection from {node_a} to {node_b}.
+Remove the edge between {node_a} and {node_b}.
+Delete the edge connecting {node_a} and {node_b}.
+Drop the connection between {node_a} and {node_b}.
+Eliminate the link between {node_a} and {node_b}.
+Stop data flow from {node_a} to {node_b}.
+Prevent {node_a} from sending data to {node_b}.
+Block the connection from {node_a} to {node_b}.
+Disable data flow between {node_a} and {node_b}.
+Cut off {node_a} from {node_b}.
+Disconnect the output of {node_a} from the input of {node_b}.
+Remove the output connection from {node_a} to {node_b}.
+Detach the output of {node_a} from {node_b}.
+Break the output link from {node_a} into {node_b}.
+Unhook the output of {node_a} from {node_b}.
+Disconnect service {node_a} from service {node_b}.
+Unlink component {node_a} from component {node_b}.
+Detach module {node_a} from module {node_b}.
+Separate system {node_a} from system {node_b}.
+Remove the wiring between component {node_a} and component {node_b}.
+Disable communication between {node_a} and {node_b}.
+Stop {node_a} from talking to {node_b}.
+Prevent connectivity between {node_a} and {node_b}.
+Turn off the connection between {node_a} and {node_b}.
+End the relationship between {node_a} and {node_b}.
+Remove the direct connection from {node_a} to {node_b}.
+Break the direct link between {node_a} and {node_b}.
+Disconnect {node_a} directly from {node_b}.
+Delete the direct edge between {node_a} and {node_b}.
+Sever the direct relationship between {node_a} and {node_b}.
+Undo the pipeline from {node_a} to {node_b}.
+Remove the pipeline connecting {node_a} and {node_b}.
+Break the pipeline between {node_a} and {node_b}.
+Disable the pipeline from {node_a} into {node_b}.
+Detach the pipeline linking {node_a} to {node_b}.
+Disconnect the flow from {node_a} to {node_b}.
+Unlink the flow between {node_a} and {node_b}.
+Remove the flow connection from {node_a} into {node_b}.
+Stop the flow from {node_a} into {node_b}.
+Break the flow path between {node_a} and {node_b}.
+Disconnect the component {node_a} from {node_b}.
+Unlink the module {node_a} from {node_b}.
+Detach the system {node_a} from {node_b}.
+Remove the component connection between {node_a} and {node_b}.
+Break the module connection from {node_a} to {node_b}.
+Disconnect the link from {node_a} into {node_b}.
+Unhook {node_a} so it no longer connects to {node_b}.
+Break the wiring from {node_a} to {node_b}.
+Remove the wiring between {node_a} and {node_b}.
+Sever the wiring connecting {node_a} to {node_b}.
+Disconnect the data path from {node_a} to {node_b}.
+Remove the data path between {node_a} and {node_b}.
+Break the data path from {node_a} into {node_b}.
+Disable the data path linking {node_a} and {node_b}.
+Stop the data path from {node_a} to {node_b}.
+Disconnect the flow path between {node_a} and {node_b}.
+Unlink the flow path from {node_a} to {node_b}.
+Break the flow path connecting {node_a} into {node_b}.
+Disable the flow path between {node_a} and {node_b}.
+Remove the flow path from {node_a} to {node_b}.
+Disconnect the dependency from {node_a} to {node_b}.
+Remove the dependency linking {node_a} and {node_b}.
+Break the dependency between {node_a} and {node_b}.
+Disable the dependency from {node_a} to {node_b}.
+Sever the dependency connecting {node_a} to {node_b}.
+Disconnect the route from {node_a} to {node_b}.
+Remove the route between {node_a} and {node_b}.
+Break the route from {node_a} into {node_b}.
+Disable the route connecting {node_a} and {node_b}.
+Stop the route from {node_a} to {node_b}.
+Disconnect the association between {node_a} and {node_b}.
+Remove the association linking {node_a} to {node_b}.
+Break the association from {node_a} to {node_b}
+Disconnect the linkage between {node_a} and {node_b}.
+Remove the linkage from {node_a} into {node_b}.
+Break the linkage connecting {node_a} and {node_b}.
+Disconnect the relationship from {node_a} to {node_b}.
+Remove the relationship between {node_a} and {node_b}.
+End the relationship linking {node_a} and {node_b}.
+Fully disconnect {node_a} from {node_b}.

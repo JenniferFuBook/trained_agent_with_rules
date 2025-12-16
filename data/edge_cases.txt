@@ -1,0 +1,2277 @@
+### Input:
+Add node db, then delete db immediately, and finally connect db to cache.
+
+### Output:
+ADD_NODE db
+DELETE_NODE db
+
+### Input:
+Delete api, add api, connect api to db, then disconnect api from db.
+
+### Output:
+DELETE_NODE api
+ADD_NODE api
+CONNECT api db
+DISCONNECT api db
+
+### Input:
+Connect logging to pipeline, then disconnect pipeline from logging, finally delete logging.
+
+### Output:
+CONNECT logging pipeline
+DISCONNECT pipeline logging
+DELETE_NODE logging
+
+### Input:
+Add node cache, connect it to analytics, add cache again, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+
+### Input:
+Delete user-profile, then connect user-profile to db.
+
+### Output:
+DELETE_NODE user-profile
+
+### Input:
+Add analytics, connect analytics to analytics, then disconnect analytics from analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+
+### Input:
+Connect db to cache, then delete db, finally add db again.
+
+### Output:
+CONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Disconnect payments from user-profile, then delete payments, then add payments and connect to user-profile.
+
+### Output:
+DISCONNECT payments user-profile
+DELETE_NODE payments
+ADD_NODE payments
+CONNECT payments user-profile
+
+### Input:
+Delete logging, add logging, disconnect logging from pipeline, then connect logging to pipeline.
+
+### Output:
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging pipeline
+
+### Input:
+Add pipeline, connect pipeline to db, then disconnect pipeline from db, finally delete pipeline.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+
+### Input:
+Add node cache, then add node cache again.
+
+### Output:
+ADD_NODE cache
+
+### Input:
+Delete node db twice, then add db and connect to analytics.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+
+### Input:
+Connect db to db, then disconnect db from db.
+
+### Output:
+CONNECT db db
+DISCONNECT db db
+
+### Input:
+Add analytics, then delete analytics, add analytics, connect to user-profile, disconnect from user-profile.
+
+### Output:
+ADD_NODE analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT analytics user-profile
+
+### Input:
+Delete cache, disconnect cache from db, then add cache and connect to db.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache db
+
+### Input:
+Add node logging, connect logging to logging, disconnect logging from logging.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+
+### Input:
+Add db, connect db to pipeline, delete db immediately.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+
+### Input:
+Delete node user-profile, add node user-profile, connect user-profile to analytics.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+
+### Input:
+Connect pipeline to pipeline, then disconnect pipeline from pipeline, finally delete pipeline.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+
+### Input:
+Add payments, connect payments to cache, delete payments, then add payments again.
+
+### Output:
+ADD_NODE payments
+CONNECT payments cache
+DELETE_NODE payments
+ADD_NODE payments
+
+### Input:
+Delete db, delete db again, then add db and connect to analytics.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+
+### Input:
+Add analytics, connect analytics to analytics, then delete analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DELETE_NODE analytics
+
+### Input:
+Delete cache, disconnect cache from cache, then add cache and connect to cache.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+
+### Input:
+Connect logging to pipeline, then disconnect pipeline from logging, then connect logging to pipeline again.
+
+### Output:
+CONNECT logging pipeline
+DISCONNECT pipeline logging
+CONNECT logging pipeline
+
+### Input:
+Add node db, delete node db, add db, then connect db to analytics.
+
+### Output:
+ADD_NODE db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete again.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline from pipeline, add pipeline, connect to db.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+
+### Input:
+Add cache, connect to cache, disconnect cache, delete cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+
+### Input:
+Delete analytics, add analytics, connect analytics to analytics, then disconnect analytics.
+
+### Output:
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+
+### Input:
+Add node logging, connect logging to logging, delete logging immediately.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DELETE_NODE logging
+
+### Input:
+Disconnect db from db, then delete db, add db again, connect to pipeline.
+
+### Output:
+DISCONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+
+### Input:
+Add pipeline, connect pipeline to pipeline, disconnect pipeline, delete pipeline.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+
+### Input:
+Delete payments, add payments, connect payments to payments, disconnect payments.
+
+### Output:
+DELETE_NODE payments
+ADD_NODE payments
+CONNECT payments payments
+DISCONNECT payments payments
+
+### Input:
+Add analytics, connect analytics to user-profile, delete analytics, add analytics again.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Connect db to cache, disconnect cache from db, delete db, add db again.
+
+### Output:
+CONNECT db cache
+DISCONNECT cache db
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Add logging, connect logging to analytics, delete logging, then add logging and connect to analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+
+### Input:
+Delete pipeline, disconnect pipeline from pipeline, add pipeline, connect pipeline to db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+
+### Input:
+Add node cache, delete cache, then add cache and connect to analytics.
+
+### Output:
+ADD_NODE cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache analytics
+
+### Input:
+Delete db, add db, connect db to pipeline, then disconnect db from pipeline.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+
+### Input:
+Add analytics, connect analytics to analytics, then disconnect and delete analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+
+### Input:
+Delete user-profile, add user-profile, connect to user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile user-profile
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging again.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+
+### Input:
+Add pipeline, connect pipeline to cache, disconnect pipeline, delete pipeline.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DISCONNECT pipeline cache
+DELETE_NODE pipeline
+
+### Input:
+Delete payments, add payments, connect payments to pipeline, disconnect payments.
+
+### Output:
+DELETE_NODE payments
+ADD_NODE payments
+CONNECT payments pipeline
+DISCONNECT payments pipeline
+
+### Input:
+Add analytics, connect analytics to db, delete analytics, add analytics again, connect to pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics pipeline
+
+### Input:
+Delete db, add db, connect db to db, then disconnect db.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db db
+DISCONNECT db db
+
+### Input:
+Add logging, connect logging to analytics, delete logging, disconnect logging from analytics, add logging again.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE logging
+DISCONNECT logging analytics
+ADD_NODE logging
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to pipeline, disconnect pipeline, delete pipeline again.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+
+### Input:
+Add node cache, delete cache, add cache, connect to cache.
+
+### Output:
+ADD_NODE cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+
+### Input:
+Add node db, connect it to pipeline, then delete db and add db again.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Delete analytics, add analytics, connect analytics to analytics, disconnect analytics.
+
+### Output:
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+
+### Input:
+Connect cache to cache, then disconnect cache and delete cache immediately.
+
+### Output:
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, then add logging again.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+ADD_NODE logging
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile again.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, connect pipeline to pipeline, delete pipeline, add pipeline again.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Disconnect payments from user-profile, delete payments, add payments, connect payments to user-profile.
+
+### Output:
+DISCONNECT payments user-profile
+DELETE_NODE payments
+ADD_NODE payments
+CONNECT payments user-profile
+
+### Input:
+Add analytics, connect analytics to db, delete analytics, disconnect analytics from db, add analytics again.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE analytics
+DISCONNECT analytics db
+ADD_NODE analytics
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db again.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging again.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline from analytics, delete pipeline again.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache again.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, connect to cache.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+
+### Input:
+Add node db, delete db, add db again, connect db to pipeline, disconnect db.
+
+### Output:
+ADD_NODE db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics again.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect logging to db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline again.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Add cache, delete cache, add cache, connect cache to analytics, disconnect cache.
+
+### Output:
+ADD_NODE cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to db, disconnect user-profile, delete user-profile, add user-profile, connect to logging.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile logging
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect logging from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+
+### Input:
+Add node analytics, connect it to pipeline, then delete analytics and add analytics again.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db again.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache again.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+
+### Input:
+Add db, connect db to db, delete db, add db again, disconnect db from db.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db db
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging from db.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile from cache.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db again.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging user-profile
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to db, disconnect pipeline from db, delete pipeline, add pipeline again.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect to logging.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to pipeline, disconnect user-profile, delete user-profile, add user-profile, connect to db.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to pipeline.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics pipeline
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, disconnect cache from user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache user-profile
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect logging from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+
+### Input:
+Add analytics, connect analytics to db, delete analytics, add analytics again, disconnect analytics from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE analytics
+ADD_NODE analytics
+DISCONNECT analytics db
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db, delete db, add db again.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline, disconnect logging.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache, add cache, connect to logging.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to pipeline, disconnect db.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging, delete logging.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile, delete user-profile, add user-profile, disconnect from db.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile db
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again, connect analytics to user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db, add db again, connect db to cache.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to analytics, disconnect logging.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db, connect pipeline to db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+CONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache user-profile
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, connect to logging, disconnect user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT user-profile logging
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline, connect db to analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache, disconnect analytics.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT analytics cache
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline, connect logging to db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging db
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db, disconnect pipeline.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging, connect user-profile to pipeline.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+CONNECT user-profile pipeline
+
+### Input:
+Add node analytics, connect analytics to pipeline, delete analytics, add analytics again, disconnect analytics from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE analytics
+ADD_NODE analytics
+DISCONNECT analytics pipeline
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db, add db again, connect db to analytics.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline, disconnect logging from pipeline.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache, add cache, connect cache to logging, disconnect cache.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+DISCONNECT cache logging
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to pipeline, disconnect db from pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline from analytics.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging, delete logging, add logging.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile, delete user-profile, add user-profile, disconnect from db, connect to pipeline.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile db
+CONNECT user-profile pipeline
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again, connect analytics to user-profile, disconnect analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT analytics user-profile
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db, add db again, connect db to cache, disconnect db.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to analytics, disconnect logging from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db, connect pipeline to db, disconnect pipeline.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+CONNECT pipeline db
+DISCONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging, connect user-profile to pipeline, disconnect from user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline, connect db to analytics, disconnect db.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+DISCONNECT db analytics
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache, disconnect analytics, delete analytics.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT analytics cache
+DELETE_NODE analytics
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline, connect logging to db, disconnect logging.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging db
+DISCONNECT logging db
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db, disconnect pipeline, delete pipeline.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+
+### Input:
+Add analytics, connect analytics to db, disconnect analytics, delete analytics, add analytics again, connect analytics to pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT analytics db
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics pipeline
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db, add db again, disconnect db from analytics.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db analytics
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline, disconnect logging from pipeline, delete logging.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile, delete user-profile, add user-profile, connect to db.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache, add cache, connect cache to logging, disconnect cache, delete cache again.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+DISCONNECT cache logging
+DELETE_NODE cache
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to pipeline, disconnect db, delete db.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline from analytics, delete pipeline, add pipeline.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging, delete logging, add logging, connect logging to analytics.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile, delete user-profile, add user-profile, disconnect from db, connect user-profile to pipeline, disconnect user-profile from pipeline.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile db
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again, connect analytics to user-profile, disconnect analytics from user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT analytics user-profile
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db, add db again, connect db to cache, disconnect db from cache.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to analytics, disconnect logging from analytics, delete logging.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+DELETE_NODE logging
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db, connect pipeline to db, disconnect pipeline, delete pipeline.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache, add cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging, connect user-profile to pipeline, disconnect from user-profile, delete user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline, connect db to analytics, disconnect db, delete db, add db again.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+DISCONNECT db analytics
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache, disconnect analytics, delete analytics, add analytics.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT analytics cache
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline, connect logging to db, disconnect logging, delete logging.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db, disconnect pipeline, delete pipeline, add pipeline again.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache, add cache, disconnect cache from user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache user-profile
+
+### Input:
+Add analytics, connect analytics to db, disconnect analytics, delete analytics, add analytics again, connect analytics to pipeline, disconnect analytics from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT analytics db
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics pipeline
+DISCONNECT analytics pipeline
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db, add db again, connect db to analytics, disconnect db from analytics.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+DISCONNECT db analytics
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline, disconnect logging from pipeline, delete logging, add logging.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile, delete user-profile, add user-profile, connect to db, disconnect user-profile.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache, add cache, connect cache to logging, disconnect cache, delete cache again, add cache.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+DISCONNECT cache logging
+DELETE_NODE cache
+ADD_NODE cache
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to pipeline, disconnect db, delete db, add db, disconnect db from pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline from analytics, delete pipeline, add pipeline, disconnect pipeline.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline pipeline
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging, delete logging, add logging, connect logging to analytics, disconnect logging.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile, delete user-profile, add user-profile, disconnect from db, connect user-profile to pipeline, disconnect from user-profile, delete user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile db
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again, connect analytics to user-profile, disconnect analytics from user-profile, delete analytics, add analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT analytics user-profile
+DELETE_NODE analytics
+ADD_NODE analytics
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db, add db again, connect db to cache, disconnect db from cache, delete db, add db again.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to analytics, disconnect logging from analytics, delete logging, add logging, connect logging to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db, connect pipeline to db, disconnect pipeline, delete pipeline, add pipeline.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+ADD_NODE pipeline
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache, add cache, disconnect cache from user-profile, delete cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache user-profile
+DELETE_NODE cache
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging, connect user-profile to pipeline, disconnect from user-profile, delete user-profile, add user-profile.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+ADD_NODE user-profile
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline, connect db to analytics, disconnect db, delete db, add db again, disconnect db from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+DISCONNECT db analytics
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db analytics
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache, disconnect analytics, delete analytics, add analytics, disconnect analytics from cache.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT analytics cache
+DELETE_NODE analytics
+ADD_NODE analytics
+DISCONNECT analytics cache
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline, connect logging to db, disconnect logging, delete logging, add logging, disconnect logging from db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging db
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to db, disconnect pipeline, delete pipeline, add pipeline again, disconnect pipeline from db.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache, add cache, disconnect cache from user-profile, delete cache, add cache.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache user-profile
+DELETE_NODE cache
+ADD_NODE cache
+
+### Input:
+Add analytics, connect analytics to db, disconnect analytics, delete analytics, add analytics again, connect analytics to pipeline, disconnect analytics from pipeline, delete analytics.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT analytics db
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics pipeline
+DISCONNECT analytics pipeline
+DELETE_NODE analytics
+
+### Input:
+Delete db, add db, connect db to cache, disconnect db from cache, delete db, add db again, connect db to analytics, disconnect db from analytics, delete db.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+CONNECT db analytics
+DISCONNECT db analytics
+DELETE_NODE db
+
+### Input:
+Connect logging to logging, disconnect logging, delete logging, add logging, connect logging to pipeline, disconnect logging from pipeline, delete logging, add logging, disconnect logging.
+
+### Output:
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+
+### Input:
+Add user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile, delete user-profile, add user-profile, connect to db, disconnect user-profile, delete user-profile, add user-profile.
+
+### Output:
+ADD_NODE user-profile
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+
+### Input:
+Delete cache, add cache, connect cache to cache, disconnect cache, delete cache, add cache, connect cache to logging, disconnect cache, delete cache again, add cache, disconnect cache from logging.
+
+### Output:
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache cache
+DISCONNECT cache cache
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache logging
+DISCONNECT cache logging
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache logging
+
+### Input:
+Add db, connect db to db, delete db, add db again, connect db to pipeline, disconnect db, delete db, add db, disconnect db from pipeline, connect db to analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db db
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+
+### Input:
+Connect pipeline to pipeline, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline from analytics, delete pipeline, add pipeline, disconnect pipeline, connect pipeline to db.
+
+### Output:
+CONNECT pipeline pipeline
+DISCONNECT pipeline pipeline
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline pipeline
+CONNECT pipeline db
+
+### Input:
+Add logging, delete logging, add logging, connect logging to db, disconnect logging, delete logging, add logging, connect logging to analytics, disconnect logging, delete logging.
+
+### Output:
+ADD_NODE logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+DELETE_NODE logging
+
+### Input:
+Delete user-profile, add user-profile, connect user-profile to cache, disconnect user-profile, delete user-profile, add user-profile, disconnect from db, connect user-profile to pipeline, disconnect from user-profile, delete user-profile, add user-profile, connect user-profile to analytics.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT user-profile cache
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile db
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+
+### Input:
+Add analytics, connect analytics to analytics, disconnect analytics, delete analytics, add analytics again, connect analytics to user-profile, disconnect analytics from user-profile, delete analytics, add analytics, disconnect analytics from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT analytics user-profile
+DELETE_NODE analytics
+ADD_NODE analytics
+DISCONNECT analytics db
+
+### Input:
+Delete db, add db, connect db to pipeline, disconnect db, delete db, add db again, connect db to cache, disconnect db from cache, delete db, add db again, connect db to logging.
+
+### Output:
+DELETE_NODE db
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+CONNECT db cache
+DISCONNECT db cache
+DELETE_NODE db
+ADD_NODE db
+CONNECT db logging
+
+### Input:
+Add logging, connect logging to logging, disconnect logging, delete logging, add logging, connect to analytics, disconnect logging from analytics, delete logging, add logging, connect logging to pipeline, disconnect logging from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging logging
+DISCONNECT logging logging
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT logging analytics
+DELETE_NODE logging
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+
+### Input:
+Delete pipeline, add pipeline, connect pipeline to analytics, disconnect pipeline, delete pipeline, add pipeline, disconnect from db, connect pipeline to db, disconnect pipeline, delete pipeline, add pipeline, connect pipeline to cache.
+
+### Output:
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT pipeline analytics
+DELETE_NODE pipeline
+ADD_NODE pipeline
+DISCONNECT pipeline db
+CONNECT pipeline db
+DISCONNECT pipeline db
+DELETE_NODE pipeline
+ADD_NODE pipeline
+CONNECT pipeline cache
+
+### Input:
+Add cache, connect cache to analytics, disconnect cache, delete cache, add cache, connect cache to user-profile, disconnect cache from analytics, delete cache, add cache, disconnect cache from user-profile, delete cache, add cache, connect cache to db.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT cache analytics
+DELETE_NODE cache
+ADD_NODE cache
+DISCONNECT cache user-profile
+DELETE_NODE cache
+ADD_NODE cache
+CONNECT cache db
+
+### Input:
+Delete user-profile, add user-profile, connect to db, disconnect from db, delete user-profile, add user-profile, disconnect from logging, connect user-profile to pipeline, disconnect from user-profile, delete user-profile, add user-profile, connect user-profile to analytics, disconnect user-profile from analytics.
+
+### Output:
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT user-profile db
+DELETE_NODE user-profile
+ADD_NODE user-profile
+DISCONNECT user-profile logging
+CONNECT user-profile pipeline
+DISCONNECT user-profile pipeline
+DELETE_NODE user-profile
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT user-profile analytics
+
+### Input:
+Add node db, connect db to pipeline, delete db, add db again, disconnect db from pipeline, connect db to analytics, disconnect db, delete db, add db again, disconnect db from analytics, connect db to cache.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db pipeline
+CONNECT db analytics
+DISCONNECT db analytics
+DELETE_NODE db
+ADD_NODE db
+DISCONNECT db analytics
+CONNECT db cache
+
+### Input:
+Connect analytics to analytics, disconnect analytics, delete analytics, add analytics, connect analytics to cache, disconnect analytics, delete analytics, add analytics, disconnect analytics from cache, connect analytics to pipeline.
+
+### Output:
+CONNECT analytics analytics
+DISCONNECT analytics analytics
+DELETE_NODE analytics
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT analytics cache
+DELETE_NODE analytics
+ADD_NODE analytics
+DISCONNECT analytics cache
+CONNECT analytics pipeline
+
+### Input:
+Add logging, connect logging to pipeline, disconnect logging, delete logging, add logging, disconnect from pipeline, connect logging to db, disconnect logging, delete logging, add logging, disconnect logging from db, connect logging to analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT logging pipeline
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging pipeline
+CONNECT logging db
+DISCONNECT logging db
+DELETE_NODE logging
+ADD_NODE logging
+DISCONNECT logging db
+CONNECT logging analytics

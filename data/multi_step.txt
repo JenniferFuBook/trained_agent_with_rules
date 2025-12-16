@@ -1,0 +1,3525 @@
+### Input:
+Add node analytics, connect it to user-profile, then delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE db
+
+### Input:
+Initialize logging, attach it to cache, and finally remove api.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE api
+
+### Input:
+Create node payments, link it with pipeline, then disconnect cache from db.
+
+### Output:
+ADD_NODE payments
+CONNECT payments pipeline
+DISCONNECT cache db
+
+### Input:
+Start auth, connect it to api, after that remove user-profile.
+
+### Output:
+ADD_NODE auth
+CONNECT auth api
+DELETE_NODE user-profile
+
+### Input:
+Add db node and connect it to logging. Then delete analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE analytics
+
+### Input:
+Initialize analytics, attach it to payments, and then disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT pipeline user-profile
+
+### Input:
+Add cache node, link it with db, then remove api, and finally connect cache to search.
+
+### Output:
+ADD_NODE cache
+CONNECT cache db
+DELETE_NODE api
+CONNECT cache search
+
+### Input:
+Start logging, connect it to search, then delete auth immediately.
+
+### Output:
+ADD_NODE logging
+CONNECT logging search
+DELETE_NODE auth
+
+### Input:
+Create pipeline, attach it to analytics, and disconnect db from cache afterwards.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT db cache
+
+### Input:
+Add user-profile, connect it to payments, then delete logging and remove db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DELETE_NODE logging
+DELETE_NODE db
+
+### Input:
+Create node search, link it to analytics, then connect it to cache.
+
+### Output:
+ADD_NODE search
+CONNECT search analytics
+CONNECT search cache
+
+### Input:
+Initialize payments, attach it to pipeline, and remove api afterwards.
+
+### Output:
+ADD_NODE payments
+CONNECT payments pipeline
+DELETE_NODE api
+
+### Input:
+Add node auth, connect it to db, disconnect cache from logging, and finally delete user-profile.
+
+### Output:
+ADD_NODE auth
+CONNECT auth db
+DISCONNECT cache logging
+DELETE_NODE user-profile
+
+### Input:
+Start db, link it with logging, then delete pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE pipeline
+
+### Input:
+Create node cache, attach it to analytics, and then remove payments.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DELETE_NODE payments
+
+### Input:
+Initialize user-profile, connect it to search, disconnect api from auth.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile search
+DISCONNECT api auth
+
+### Input:
+Add logging node, link it with db, then delete search, and finally connect logging to cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging db
+DELETE_NODE search
+CONNECT logging cache
+
+### Input:
+Create analytics, attach it to pipeline, and remove user-profile after that.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE user-profile
+
+### Input:
+Start payments, connect it to auth, then delete cache and disconnect db from logging.
+
+### Output:
+ADD_NODE payments
+CONNECT payments auth
+DELETE_NODE cache
+DISCONNECT db logging
+
+### Input:
+Add db node, connect it to user-profile, and remove analytics afterwards.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE analytics
+
+### Input:
+Initialize cache, connect it to api, and delete logging.
+
+### Output:
+ADD_NODE cache
+CONNECT cache api
+DELETE_NODE logging
+
+### Input:
+Create node pipeline, link it with payments, then disconnect search from user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline payments
+DISCONNECT search user-profile
+
+### Input:
+Add node analytics, connect it to db, then remove auth.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE auth
+
+### Input:
+Start user-profile, attach it to logging, and disconnect pipeline from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT pipeline payments
+
+### Input:
+Add db, connect it to cache, and finally delete search.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE search
+
+### Input:
+Initialize logging, attach it to analytics, then remove user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE user-profile
+
+### Input:
+Create cache node, connect it to api, and disconnect payments from pipeline.
+
+### Output:
+ADD_NODE cache
+CONNECT cache api
+DISCONNECT payments pipeline
+
+### Input:
+Add auth, link it with db, then delete analytics and remove logging.
+
+### Output:
+ADD_NODE auth
+CONNECT auth db
+DELETE_NODE analytics
+DELETE_NODE logging
+
+### Input:
+Start payments, attach it to user-profile, then disconnect db from cache.
+
+### Output:
+ADD_NODE payments
+CONNECT payments user-profile
+DISCONNECT db cache
+
+### Input:
+Add node pipeline, connect it to logging, then remove search.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DELETE_NODE search
+
+### Input:
+Create analytics, link it with cache, and delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize db, attach it to pipeline, then remove api.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE api
+
+### Input:
+Add logging, connect it to payments, then disconnect auth from user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging payments
+DISCONNECT auth user-profile
+
+### Input:
+Create node user-profile, attach it to analytics, then delete cache.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE cache
+
+### Input:
+Start search, link it with pipeline, then remove logging.
+
+### Output:
+ADD_NODE search
+CONNECT search pipeline
+DELETE_NODE logging
+
+### Input:
+Add payments, connect it to auth, and disconnect db from analytics.
+
+### Output:
+ADD_NODE payments
+CONNECT payments auth
+DISCONNECT db analytics
+
+### Input:
+Initialize cache, attach it to user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE cache
+CONNECT cache user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create node db, connect it to analytics, and remove logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE logging
+
+### Input:
+Add node auth, link it with search, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE auth
+CONNECT auth search
+DISCONNECT pipeline payments
+
+### Input:
+Start analytics, attach it to logging, then delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, connect it to db, then remove payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE payments
+
+### Input:
+Create node user-profile, link it with cache, and delete analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile cache
+DELETE_NODE analytics
+
+### Input:
+Initialize db, attach it to logging, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT pipeline payments
+
+### Input:
+Add payments, connect it to auth, and finally delete cache.
+
+### Output:
+ADD_NODE payments
+CONNECT payments auth
+DELETE_NODE cache
+
+### Input:
+Create node user-profile, attach it to analytics, then remove pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE pipeline
+
+### Input:
+Add node db, connect it to logging, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE user-profile
+
+### Input:
+Initialize analytics, attach it to payments, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT cache pipeline
+
+### Input:
+Create node auth, link it with db, and remove logging afterwards.
+
+### Output:
+ADD_NODE auth
+CONNECT auth db
+DELETE_NODE logging
+
+### Input:
+Start user-profile, connect it to analytics, then delete pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE pipeline
+
+### Input:
+Add logging, attach it to cache, disconnect db from payments, and finally remove search.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT db payments
+DELETE_NODE search
+
+### Input:
+Initialize db, link it with pipeline, then add analytics and connect it to user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+ADD_NODE analytics
+CONNECT analytics user-profile
+
+### Input:
+Create node payments, attach it to logging, then delete auth.
+
+### Output:
+ADD_NODE payments
+CONNECT payments logging
+DELETE_NODE auth
+
+### Input:
+Add cache, connect it to user-profile, then disconnect pipeline from analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache user-profile
+DISCONNECT pipeline analytics
+
+### Input:
+Start analytics, link it with db, then remove logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Create node pipeline, attach it to payments, then disconnect auth from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline payments
+DISCONNECT auth cache
+
+### Input:
+Add user-profile, connect it to db, then delete pipeline and remove analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DELETE_NODE pipeline
+DELETE_NODE analytics
+
+### Input:
+Initialize logging, attach it to cache, then add node search and connect it to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+ADD_NODE search
+CONNECT search pipeline
+
+### Input:
+Create node db, connect it to analytics, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, attach it to logging, then disconnect payments from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DISCONNECT payments cache
+
+### Input:
+Start user-profile, link it with analytics, then delete db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE db
+
+### Input:
+Create analytics, connect it to pipeline, then remove logging and disconnect auth from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+DISCONNECT auth db
+
+### Input:
+Add cache node, attach it to payments, then delete user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache payments
+DELETE_NODE user-profile
+
+### Input:
+Initialize db, connect it to logging, then disconnect pipeline from analytics and remove cache.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT pipeline analytics
+DELETE_NODE cache
+
+### Input:
+Create node logging, attach it to db, then add analytics and connect it to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging db
+ADD_NODE analytics
+CONNECT analytics pipeline
+
+### Input:
+Add node user-profile, link it with payments, then disconnect cache from logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DISCONNECT cache logging
+
+### Input:
+Start analytics, attach it to user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create pipeline, connect it to db, then remove logging and add node cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE logging
+ADD_NODE cache
+
+### Input:
+Add payments, attach it to user-profile, then disconnect auth from analytics and delete db.
+
+### Output:
+ADD_NODE payments
+CONNECT payments user-profile
+DISCONNECT auth analytics
+DELETE_NODE db
+
+### Input:
+Initialize db, connect it to logging, then add node analytics and connect it to user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+ADD_NODE analytics
+CONNECT analytics user-profile
+
+### Input:
+Create node cache, attach it to pipeline, then remove payments.
+
+### Output:
+ADD_NODE cache
+CONNECT cache pipeline
+DELETE_NODE payments
+
+### Input:
+Add logging, connect it to analytics, then disconnect db from user-profile and delete search.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT db user-profile
+DELETE_NODE search
+
+### Input:
+Start user-profile, attach it to payments, then delete db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DELETE_NODE db
+
+### Input:
+Create node analytics, link it with cache, then remove logging and disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DELETE_NODE logging
+DISCONNECT pipeline user-profile
+
+### Input:
+Add node db, connect it to pipeline, then delete auth.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE auth
+
+### Input:
+Initialize cache, attach it to logging, then add node user-profile and connect it to analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache logging
+ADD_NODE user-profile
+CONNECT user-profile analytics
+
+### Input:
+Create payments, connect it to db, then disconnect logging from pipeline.
+
+### Output:
+ADD_NODE payments
+CONNECT payments db
+DISCONNECT logging pipeline
+
+### Input:
+Add analytics node, attach it to user-profile, then delete cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE cache
+
+### Input:
+Start db, connect it to logging, then remove pipeline and disconnect payments from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE pipeline
+DISCONNECT payments user-profile
+
+### Input:
+Create node logging, attach it to analytics, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, connect it to cache, then remove db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE db
+
+### Input:
+Initialize user-profile, attach it to payments, then disconnect analytics from logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DISCONNECT analytics logging
+
+### Input:
+Create node db, connect it to pipeline, then delete search.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE search
+
+### Input:
+Add logging, attach it to user-profile, then remove analytics and disconnect cache from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE analytics
+DISCONNECT cache pipeline
+
+### Input:
+Start analytics, connect it to payments, then delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DELETE_NODE db
+
+### Input:
+Create node user-profile, attach it to logging, then disconnect pipeline from cache and remove search.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT pipeline cache
+DELETE_NODE search
+
+### Input:
+Add node db, connect it to analytics, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE payments
+
+### Input:
+Initialize cache, attach it to pipeline, then add node logging and connect it to user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache pipeline
+ADD_NODE logging
+CONNECT logging user-profile
+
+### Input:
+Create node analytics, link it with db, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT payments pipeline
+
+### Input:
+Add user-profile, connect it to cache, then delete pipeline and remove logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile cache
+DELETE_NODE pipeline
+DELETE_NODE logging
+
+### Input:
+Start db node, attach it to analytics, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DISCONNECT user-profile payments
+
+### Input:
+Create logging, connect it to cache, then delete analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE analytics
+
+### Input:
+Add pipeline, attach it to db, then remove search.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE search
+
+### Input:
+Initialize user-profile, connect it to analytics, then disconnect cache from logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache logging
+
+### Input:
+Create db node, attach it to pipeline, then delete payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE payments
+
+### Input:
+Add logging, connect it to user-profile, then remove analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE analytics
+
+### Input:
+Start analytics, attach it to cache, then disconnect db from pipeline and delete search.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT db pipeline
+DELETE_NODE search
+
+### Input:
+Add node auth, connect it to db, then delete cache.
+
+### Output:
+ADD_NODE auth
+CONNECT auth db
+DELETE_NODE cache
+
+### Input:
+Initialize payments, attach it to pipeline, and finally disconnect logging from user-profile.
+
+### Output:
+ADD_NODE payments
+CONNECT payments pipeline
+DISCONNECT logging user-profile
+
+### Input:
+Create node analytics, connect it to cache, then remove db afterwards.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DELETE_NODE db
+
+### Input:
+Start user-profile, link it with logging, and delete search immediately.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DELETE_NODE search
+
+### Input:
+Add logging, connect it to db, then disconnect pipeline from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging db
+DISCONNECT pipeline analytics
+
+### Input:
+Initialize db, attach it to payments, then delete auth.
+
+### Output:
+ADD_NODE db
+CONNECT db payments
+DELETE_NODE auth
+
+### Input:
+Create node pipeline, link it with user-profile, then remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE cache
+
+### Input:
+Add analytics node, connect it to db, after that disconnect user-profile from logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT user-profile logging
+
+### Input:
+Start cache, attach it to pipeline, then delete payments.
+
+### Output:
+ADD_NODE cache
+CONNECT cache pipeline
+DELETE_NODE payments
+
+### Input:
+Create node user-profile, connect it to analytics, and remove db afterwards.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE db
+
+### Input:
+Add logging, attach it to payments, then disconnect auth from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging payments
+DISCONNECT auth cache
+
+### Input:
+Initialize analytics, connect it to user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create node db, attach it to logging, then remove search immediately.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE search
+
+### Input:
+Add pipeline, connect it to analytics, after that delete cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE cache
+
+### Input:
+Start user-profile, link it with db, then disconnect payments from logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT payments logging
+
+### Input:
+Create logging node, attach it to cache, then delete analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE analytics
+
+### Input:
+Add node payments, connect it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE payments
+CONNECT payments pipeline
+DELETE_NODE user-profile
+
+### Input:
+Initialize cache, attach it to db, then disconnect analytics from logging.
+
+### Output:
+ADD_NODE cache
+CONNECT cache db
+DISCONNECT analytics logging
+
+### Input:
+Create node analytics, connect it to pipeline, then delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE db
+
+### Input:
+Add logging, attach it to user-profile, after that remove payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE payments
+
+### Input:
+Start db, connect it to analytics, then disconnect pipeline from cache.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DISCONNECT pipeline cache
+
+### Input:
+Create node user-profile, attach it to payments, then delete logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DELETE_NODE logging
+
+### Input:
+Add pipeline, connect it to db, and remove analytics afterwards.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE analytics
+
+### Input:
+Initialize analytics, attach it to cache, then disconnect user-profile from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT user-profile pipeline
+
+### Input:
+Create node db, connect it to logging, then delete payments and remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect pipeline from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT pipeline cache
+
+### Input:
+Start payments, connect it to user-profile, then delete db.
+
+### Output:
+ADD_NODE payments
+CONNECT payments user-profile
+DELETE_NODE db
+
+### Input:
+Create node analytics, attach it to pipeline, then remove logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Add user-profile, connect it to cache, then disconnect db from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT db payments
+
+### Input:
+Initialize db, attach it to logging, then delete search and remove pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE search
+DELETE_NODE pipeline
+
+### Input:
+Create node logging, connect it to analytics, then add node user-profile and connect it to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+
+### Input:
+Add node cache, attach it to payments, then disconnect analytics from db.
+
+### Output:
+ADD_NODE cache
+CONNECT cache payments
+DISCONNECT analytics db
+
+### Input:
+Start analytics, link it with user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create db node, attach it to logging, then remove auth.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE auth
+
+### Input:
+Add logging, connect it to cache, then disconnect pipeline from user-profile and delete search.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT pipeline user-profile
+DELETE_NODE search
+
+### Input:
+Initialize user-profile, attach it to analytics, then remove db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE db
+
+### Input:
+Create node pipeline, connect it to payments, then delete logging.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline payments
+DELETE_NODE logging
+
+### Input:
+Add node db, attach it to analytics, then disconnect user-profile from cache.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DISCONNECT user-profile cache
+
+### Input:
+Start payments, connect it to user-profile, then delete pipeline and remove logging.
+
+### Output:
+ADD_NODE payments
+CONNECT payments user-profile
+DELETE_NODE pipeline
+DELETE_NODE logging
+
+### Input:
+Create analytics, attach it to cache, then disconnect db from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DISCONNECT db pipeline
+
+### Input:
+Add user-profile, connect it to logging, then delete payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DELETE_NODE payments
+
+### Input:
+Initialize db, attach it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node logging, connect it to user-profile, then disconnect cache from payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DISCONNECT cache payments
+
+### Input:
+Add pipeline, attach it to analytics, then delete db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+
+### Input:
+Start analytics, connect it to logging, then remove user-profile and disconnect payments from cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DELETE_NODE user-profile
+DISCONNECT payments cache
+
+### Input:
+Create node db, attach it to user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE pipeline
+
+### Input:
+Add logging, connect it to analytics, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT pipeline payments
+
+### Input:
+Initialize cache, attach it to db, then delete user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache db
+DELETE_NODE user-profile
+
+### Input:
+Create node analytics, connect it to pipeline, then remove logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Add user-profile, attach it to payments, then disconnect db from cache.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DISCONNECT db cache
+
+### Input:
+Start db, connect it to analytics, then delete pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE pipeline
+
+### Input:
+Create node logging, attach it to cache, then add node user-profile and connect it to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+
+### Input:
+Add pipeline, connect it to payments, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline payments
+DELETE_NODE analytics
+
+### Input:
+Initialize analytics, attach it to user-profile, then disconnect logging from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT logging db
+
+### Input:
+Create node db, connect it to cache, then delete payments.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE payments
+
+### Input:
+Add logging, attach it to pipeline, then remove user-profile and disconnect analytics from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE user-profile
+DISCONNECT analytics cache
+
+### Input:
+Add node analytics, connect it to db, then remove cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE cache
+
+### Input:
+Initialize logging, attach it to user-profile, and finally disconnect pipeline from payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DISCONNECT pipeline payments
+
+### Input:
+Create node db, connect it to analytics, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+
+### Input:
+Start user-profile, attach it to cache, then remove logging and disconnect db from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile cache
+DELETE_NODE logging
+DISCONNECT db pipeline
+
+### Input:
+Add payments, connect it to logging, then delete db.
+
+### Output:
+ADD_NODE payments
+CONNECT payments logging
+DELETE_NODE db
+
+### Input:
+Initialize cache, attach it to pipeline, then disconnect analytics from user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache pipeline
+DISCONNECT analytics user-profile
+
+### Input:
+Create node analytics, connect it to payments, then remove logging and delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DELETE_NODE logging
+DELETE_NODE db
+
+### Input:
+Add user-profile, attach it to logging, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT cache pipeline
+
+### Input:
+Start db, link it with analytics, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE payments
+
+### Input:
+Create logging node, attach it to cache, then add pipeline and connect it to user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+
+### Input:
+Add analytics, connect it to db, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT user-profile payments
+
+### Input:
+Initialize pipeline, attach it to logging, then delete cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DELETE_NODE cache
+
+### Input:
+Create node user-profile, connect it to analytics, then remove db and disconnect payments from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE db
+DISCONNECT payments pipeline
+
+### Input:
+Add logging, attach it to payments, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging payments
+DELETE_NODE user-profile
+
+### Input:
+Start db, connect it to cache, then disconnect analytics from pipeline and remove logging.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DISCONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node pipeline, attach it to user-profile, then add analytics and connect it to payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+ADD_NODE analytics
+CONNECT analytics payments
+
+### Input:
+Add cache, connect it to logging, then delete db.
+
+### Output:
+ADD_NODE cache
+CONNECT cache logging
+DELETE_NODE db
+
+### Input:
+Initialize analytics, attach it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE user-profile
+
+### Input:
+Create node logging, connect it to payments, then disconnect db from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging payments
+DISCONNECT db cache
+
+### Input:
+Add db node, attach it to analytics, then delete pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, connect it to logging, then remove cache and disconnect payments from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DELETE_NODE cache
+DISCONNECT payments analytics
+
+### Input:
+Create analytics, attach it to db, then delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE user-profile
+
+### Input:
+Add logging, connect it to pipeline, then disconnect cache from user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT cache user-profile
+
+### Input:
+Initialize db node, attach it to payments, then remove analytics and delete pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db payments
+DELETE_NODE analytics
+DELETE_NODE pipeline
+
+### Input:
+Create node user-profile, connect it to analytics, then delete logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DELETE_NODE logging
+
+### Input:
+Add pipeline, attach it to cache, then disconnect db from payments and remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DISCONNECT db payments
+DELETE_NODE analytics
+
+### Input:
+Start logging, connect it to user-profile, then add node analytics and connect it to pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+ADD_NODE analytics
+CONNECT analytics pipeline
+
+### Input:
+Create db node, attach it to logging, then delete payments.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+
+### Input:
+Add user-profile, connect it to analytics, then disconnect cache from db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache db
+
+### Input:
+Initialize analytics, attach it to pipeline, then remove logging and delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+DELETE_NODE user-profile
+
+### Input:
+Create node cache, connect it to payments, then disconnect pipeline from logging.
+
+### Output:
+ADD_NODE cache
+CONNECT cache payments
+DISCONNECT pipeline logging
+
+### Input:
+Add logging, attach it to analytics, then delete db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE db
+
+### Input:
+Start db node, connect it to user-profile, then remove pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from cache and delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments cache
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, connect it to db, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE analytics
+
+### Input:
+Initialize user-profile, attach it to payments, then disconnect db from logging.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DISCONNECT db logging
+
+### Input:
+Create node db, connect it to analytics, then delete cache.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE cache
+
+### Input:
+Add logging, attach it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE user-profile
+
+### Input:
+Start analytics, connect it to user-profile, then disconnect cache from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT cache db
+
+### Input:
+Create node pipeline, attach it to payments, then delete db and remove logging.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline payments
+DELETE_NODE db
+DELETE_NODE logging
+
+### Input:
+Add cache, connect it to analytics, then disconnect user-profile from pipeline.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT user-profile pipeline
+
+### Input:
+Initialize db, attach it to logging, then add node user-profile and connect it to payments.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+ADD_NODE user-profile
+CONNECT user-profile payments
+
+### Input:
+Create node logging, connect it to analytics, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE cache
+
+### Input:
+Add analytics node, attach it to pipeline, then remove db and disconnect payments from user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE db
+DISCONNECT payments user-profile
+
+### Input:
+Start user-profile, connect it to logging, then delete pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DELETE_NODE pipeline
+
+### Input:
+Add node cache, connect it to db, then delete analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache db
+DELETE_NODE analytics
+
+### Input:
+Initialize pipeline, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DISCONNECT user-profile payments
+
+### Input:
+Create node analytics, connect it to cache, then delete db and remove logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics cache
+DELETE_NODE db
+DELETE_NODE logging
+
+### Input:
+Start user-profile, attach it to analytics, then disconnect pipeline from db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT pipeline db
+
+### Input:
+Add logging, connect it to payments, then remove cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging payments
+DELETE_NODE cache
+
+### Input:
+Initialize db, attach it to pipeline, then disconnect analytics from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT analytics user-profile
+
+### Input:
+Create node user-profile, connect it to logging, then delete payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DELETE_NODE payments
+
+### Input:
+Add analytics node, attach it to db, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DISCONNECT cache pipeline
+
+### Input:
+Start pipeline, connect it to user-profile, then remove logging and delete db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE logging
+DELETE_NODE db
+
+### Input:
+Create logging, attach it to analytics, then disconnect payments from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT payments cache
+
+### Input:
+Add db, connect it to pipeline, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Initialize cache, attach it to logging, then remove analytics.
+
+### Output:
+ADD_NODE cache
+CONNECT cache logging
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, connect it to pipeline, then disconnect user-profile from db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DISCONNECT user-profile db
+
+### Input:
+Add logging, attach it to user-profile, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE cache
+
+### Input:
+Start db, connect it to analytics, then remove payments and disconnect pipeline from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE payments
+DISCONNECT pipeline logging
+
+### Input:
+Create node pipeline, attach it to cache, then add node analytics and connect it to user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+ADD_NODE analytics
+CONNECT analytics user-profile
+
+### Input:
+Add user-profile, connect it to logging, then disconnect db from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT db analytics
+
+### Input:
+Initialize analytics, attach it to payments, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DELETE_NODE pipeline
+
+### Input:
+Create node db, connect it to logging, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE user-profile
+
+### Input:
+Add pipeline, attach it to analytics, then disconnect cache from db and delete logging.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DISCONNECT cache db
+DELETE_NODE logging
+
+### Input:
+Start user-profile, connect it to payments, then remove db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile payments
+DELETE_NODE db
+
+### Input:
+Create logging node, attach it to pipeline, then delete analytics and disconnect user-profile from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE analytics
+DISCONNECT user-profile cache
+
+### Input:
+Add analytics, connect it to user-profile, then remove db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE db
+
+### Input:
+Initialize db, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT payments pipeline
+
+### Input:
+Create node cache, connect it to analytics, then delete user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to pipeline, then remove db and disconnect analytics from user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE db
+DISCONNECT analytics user-profile
+
+### Input:
+Start pipeline, connect it to db, then delete cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE cache
+
+### Input:
+Create node analytics, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT user-profile payments
+
+### Input:
+Add user-profile, connect it to pipeline, then delete db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DELETE_NODE db
+
+### Input:
+Initialize db, attach it to analytics, then remove logging and disconnect pipeline from cache.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE logging
+DISCONNECT pipeline cache
+
+### Input:
+Create node logging, connect it to user-profile, then delete analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE analytics
+
+### Input:
+Add pipeline, attach it to cache, then disconnect db from user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DISCONNECT db user-profile
+
+### Input:
+Start analytics, connect it to payments, then remove logging and delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DELETE_NODE logging
+DELETE_NODE db
+
+### Input:
+Create node db, attach it to pipeline, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT user-profile analytics
+
+### Input:
+Add logging, connect it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize user-profile, attach it to analytics, then disconnect db from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT db pipeline
+
+### Input:
+Create node pipeline, connect it to logging, then remove payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DELETE_NODE payments
+
+### Input:
+Add analytics, attach it to user-profile, then delete db and disconnect cache from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE db
+DISCONNECT cache pipeline
+
+### Input:
+Start db, connect it to logging, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE user-profile
+
+### Input:
+Create logging node, attach it to analytics, then add node pipeline and connect it to payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+ADD_NODE pipeline
+CONNECT pipeline payments
+
+### Input:
+Add user-profile, connect it to cache, then disconnect db from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile cache
+DISCONNECT db analytics
+
+### Input:
+Initialize analytics, attach it to pipeline, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to user-profile, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE payments
+
+### Input:
+Add logging, attach it to analytics, then disconnect pipeline from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT pipeline cache
+
+### Input:
+Start pipeline, connect it to db, then delete user-profile and remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE user-profile
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Add db, connect it to cache, then delete logging.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE logging
+
+### Input:
+Initialize user-profile, attach it to pipeline, then disconnect analytics from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DISCONNECT analytics payments
+
+### Input:
+Add node db, connect it to user-profile, then delete analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE analytics
+
+### Input:
+Initialize logging, attach it to cache, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT pipeline payments
+
+### Input:
+Create node analytics, connect it to db, then remove logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Start user-profile, attach it to pipeline, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DISCONNECT cache analytics
+
+### Input:
+Add pipeline, connect it to logging, then delete db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DELETE_NODE db
+
+### Input:
+Initialize cache, attach it to analytics, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT user-profile payments
+
+### Input:
+Create node db, connect it to pipeline, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect db from cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT db cache
+
+### Input:
+Start analytics, connect it to user-profile, then remove pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE pipeline
+
+### Input:
+Create node pipeline, attach it to logging, then add node db and connect it to payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to db, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT cache analytics
+
+### Input:
+Initialize analytics, attach it to pipeline, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to analytics, then remove user-profile and disconnect payments from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+DISCONNECT payments logging
+
+### Input:
+Add logging, attach it to user-profile, then delete db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE db
+
+### Input:
+Start pipeline, connect it to cache, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to logging, then add node pipeline and connect it to user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+
+### Input:
+Add db, connect it to logging, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT user-profile analytics
+
+### Input:
+Initialize logging, attach it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE user-profile
+
+### Input:
+Create node pipeline, connect it to analytics, then remove db and disconnect payments from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+DISCONNECT payments cache
+
+### Input:
+Add analytics, attach it to user-profile, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE logging
+
+### Input:
+Start db, connect it to pipeline, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE payments
+
+### Input:
+Create node logging, attach it to pipeline, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT user-profile analytics
+
+### Input:
+Add user-profile, connect it to db, then delete cache and remove pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DELETE_NODE cache
+DELETE_NODE pipeline
+
+### Input:
+Initialize analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Create node db, connect it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect cache from db and delete pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT cache db
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to payments, then disconnect db from logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT db logging
+
+### Input:
+Add db, connect it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize logging, attach it to pipeline, then disconnect payments from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT payments analytics
+
+### Input:
+Create node pipeline, connect it to user-profile, then delete db and remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE db
+DELETE_NODE cache
+
+### Input:
+Add analytics, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT user-profile payments
+
+### Input:
+Start db, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node logging, attach it to user-profile, then add node db and connect it to payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to analytics, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache pipeline
+
+### Input:
+Initialize analytics, attach it to db, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to logging, then remove payments and disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+DISCONNECT pipeline user-profile
+
+### Input:
+Add logging, attach it to analytics, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE cache
+
+### Input:
+Start pipeline, connect it to db, then remove user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE user-profile
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Add db, connect it to user-profile, then delete pipeline and remove logging.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE pipeline
+DELETE_NODE logging
+
+### Input:
+Initialize user-profile, attach it to analytics, then disconnect cache from db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache db
+
+### Input:
+Create node logging, connect it to pipeline, then delete analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE analytics
+
+### Input:
+Add pipeline, attach it to db, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT user-profile payments
+
+### Input:
+Start analytics, connect it to logging, then remove cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DELETE_NODE cache
+
+### Input:
+Create node db, attach it to pipeline, then delete user-profile and disconnect analytics from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+DISCONNECT analytics logging
+
+### Input:
+Add logging, connect it to analytics, then remove payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE payments
+
+### Input:
+Initialize user-profile, attach it to pipeline, then disconnect db from cache.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DISCONNECT db cache
+
+### Input:
+Add node analytics, connect it to db, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE pipeline
+
+### Input:
+Initialize user-profile, attach it to logging, then disconnect cache from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT cache payments
+
+### Input:
+Create node db, connect it to pipeline, then delete analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Start logging, attach it to analytics, then disconnect user-profile from db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT user-profile db
+
+### Input:
+Add pipeline, connect it to cache, then remove user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize analytics, attach it to user-profile, then disconnect db from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DISCONNECT db pipeline
+
+### Input:
+Create node logging, connect it to pipeline, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE cache
+
+### Input:
+Add user-profile, attach it to analytics, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT pipeline payments
+
+### Input:
+Start db, connect it to logging, then remove analytics and disconnect cache from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE analytics
+DISCONNECT cache user-profile
+
+### Input:
+Create node pipeline, attach it to db, then add logging and connect it to payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+ADD_NODE logging
+CONNECT logging payments
+
+### Input:
+Add analytics, connect it to user-profile, then delete db.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE db
+
+### Input:
+Initialize logging, attach it to cache, then disconnect analytics from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT analytics pipeline
+
+### Input:
+Create node db, connect it to analytics, then remove pipeline.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, attach it to logging, then disconnect cache from payments.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT cache payments
+
+### Input:
+Add pipeline, connect it to db, then delete analytics and remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE analytics
+DELETE_NODE cache
+
+### Input:
+Initialize cache, attach it to analytics, then disconnect user-profile from logging.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT user-profile logging
+
+### Input:
+Create node analytics, connect it to pipeline, then delete user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to user-profile, then disconnect db from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DISCONNECT db pipeline
+
+### Input:
+Start db, connect it to cache, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE analytics
+
+### Input:
+Create pipeline node, attach it to logging, then add analytics and connect it to user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+ADD_NODE analytics
+CONNECT analytics user-profile
+
+### Input:
+Add user-profile, connect it to db, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT cache analytics
+
+### Input:
+Initialize analytics, attach it to pipeline, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to analytics, then remove user-profile and disconnect payments from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+DISCONNECT payments logging
+
+### Input:
+Add logging, attach it to user-profile, then delete db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE db
+
+### Input:
+Start pipeline, connect it to cache, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to logging, then add node pipeline and connect it to user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+
+### Input:
+Add db, connect it to logging, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT user-profile analytics
+
+### Input:
+Initialize logging, attach it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE user-profile
+
+### Input:
+Create node pipeline, connect it to analytics, then remove db and disconnect payments from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+DISCONNECT payments cache
+
+### Input:
+Add analytics, attach it to user-profile, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE logging
+
+### Input:
+Start db, connect it to pipeline, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE payments
+
+### Input:
+Create node logging, attach it to pipeline, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT user-profile analytics
+
+### Input:
+Add user-profile, connect it to db, then delete cache and remove pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DELETE_NODE cache
+DELETE_NODE pipeline
+
+### Input:
+Initialize analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Create node db, connect it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect cache from db and delete pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT cache db
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to payments, then disconnect db from logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT db logging
+
+### Input:
+Add db, connect it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize logging, attach it to pipeline, then disconnect payments from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT payments analytics
+
+### Input:
+Create node pipeline, connect it to user-profile, then delete db and remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE db
+DELETE_NODE cache
+
+### Input:
+Add analytics, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT user-profile payments
+
+### Input:
+Start db, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node logging, attach it to user-profile, then add node db and connect it to payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to analytics, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache pipeline
+
+### Input:
+Initialize analytics, attach it to db, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to logging, then remove payments and disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+DISCONNECT pipeline user-profile
+
+### Input:
+Add logging, attach it to analytics, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE cache
+
+### Input:
+Start pipeline, connect it to db, then remove user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE user-profile
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Add db, connect it to user-profile, then delete pipeline and remove logging.
+
+### Output:
+ADD_NODE db
+CONNECT db user-profile
+DELETE_NODE pipeline
+DELETE_NODE logging
+
+### Input:
+Initialize user-profile, attach it to analytics, then disconnect cache from db.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache db
+
+### Input:
+Create node logging, connect it to pipeline, then delete analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DELETE_NODE analytics
+
+### Input:
+Add pipeline, attach it to db, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DISCONNECT user-profile payments
+
+### Input:
+Start analytics, connect it to logging, then remove cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DELETE_NODE cache
+
+### Input:
+Add node cache, connect it to analytics, then delete user-profile.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DELETE_NODE user-profile
+
+### Input:
+Initialize db, attach it to pipeline, then disconnect logging from payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DISCONNECT logging payments
+
+### Input:
+Create node analytics, connect it to user-profile, then delete pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE pipeline
+
+### Input:
+Start logging, attach it to cache, then disconnect db from user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT db user-profile
+
+### Input:
+Add pipeline, connect it to analytics, then delete db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+
+### Input:
+Initialize user-profile, attach it to logging, then disconnect payments from cache.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT payments cache
+
+### Input:
+Create node db, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Add logging, attach it to analytics, then disconnect user-profile from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT user-profile pipeline
+
+### Input:
+Start analytics, connect it to db, then delete cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE cache
+
+### Input:
+Create node pipeline, attach it to logging, then add db and connect it to payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to db, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT cache analytics
+
+### Input:
+Initialize analytics, attach it to pipeline, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to analytics, then remove user-profile and disconnect payments from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+DISCONNECT payments logging
+
+### Input:
+Add logging, attach it to user-profile, then delete db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE db
+
+### Input:
+Start pipeline, connect it to cache, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to logging, then add pipeline and connect it to user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+
+### Input:
+Add db, connect it to logging, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT user-profile analytics
+
+### Input:
+Initialize logging, attach it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE user-profile
+
+### Input:
+Create node pipeline, connect it to analytics, then remove db and disconnect payments from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+DISCONNECT payments cache
+
+### Input:
+Add analytics, attach it to user-profile, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE logging
+
+### Input:
+Start db, connect it to pipeline, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE payments
+
+### Input:
+Create node logging, attach it to pipeline, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT user-profile analytics
+
+### Input:
+Add user-profile, connect it to db, then delete cache and remove pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DELETE_NODE cache
+DELETE_NODE pipeline
+
+### Input:
+Initialize analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Create node db, connect it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect cache from db and delete pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT cache db
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to payments, then disconnect db from logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT db logging
+
+### Input:
+Add db, connect it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize logging, attach it to pipeline, then disconnect payments from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT payments analytics
+
+### Input:
+Create node pipeline, connect it to user-profile, then delete db and remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE db
+DELETE_NODE cache
+
+### Input:
+Add analytics, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT user-profile payments
+
+### Input:
+Start db, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node logging, attach it to user-profile, then add db and connect it to payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to analytics, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache pipeline
+
+### Input:
+Initialize analytics, attach it to db, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to logging, then remove payments and disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+DISCONNECT pipeline user-profile
+
+### Input:
+Add logging, attach it to analytics, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE cache
+
+### Input:
+Start pipeline, connect it to db, then remove user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE user-profile
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Add node db, connect it to analytics, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+
+### Input:
+Initialize logging, attach it to cache, then disconnect pipeline from payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DISCONNECT pipeline payments
+
+### Input:
+Create node analytics, connect it to db, then remove pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, attach it to logging, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile logging
+DISCONNECT cache analytics
+
+### Input:
+Add pipeline, connect it to logging, then delete db.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+DELETE_NODE db
+
+### Input:
+Initialize cache, attach it to analytics, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE cache
+CONNECT cache analytics
+DISCONNECT user-profile payments
+
+### Input:
+Create node db, connect it to pipeline, then delete analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Add logging, attach it to analytics, then disconnect user-profile from pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT user-profile pipeline
+
+### Input:
+Start analytics, connect it to db, then remove cache.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE cache
+
+### Input:
+Create node pipeline, attach it to logging, then add db and connect it to payments.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline logging
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to db, then disconnect cache from analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DISCONNECT cache analytics
+
+### Input:
+Initialize analytics, attach it to pipeline, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics pipeline
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to analytics, then remove user-profile and disconnect payments from logging.
+
+### Output:
+ADD_NODE db
+CONNECT db analytics
+DELETE_NODE user-profile
+DISCONNECT payments logging
+
+### Input:
+Add logging, attach it to user-profile, then delete db.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+DELETE_NODE db
+
+### Input:
+Start pipeline, connect it to cache, then remove analytics.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline cache
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to logging, then add pipeline and connect it to user-profile.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+
+### Input:
+Add db, connect it to logging, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DISCONNECT user-profile analytics
+
+### Input:
+Initialize logging, attach it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE logging
+CONNECT logging cache
+DELETE_NODE user-profile
+
+### Input:
+Create node pipeline, connect it to analytics, then remove db and disconnect payments from cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline analytics
+DELETE_NODE db
+DISCONNECT payments cache
+
+### Input:
+Add analytics, attach it to user-profile, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics user-profile
+DELETE_NODE logging
+
+### Input:
+Start db, connect it to pipeline, then remove payments.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE payments
+
+### Input:
+Create node logging, attach it to pipeline, then disconnect user-profile from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT user-profile analytics
+
+### Input:
+Add user-profile, connect it to db, then delete cache and remove pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile db
+DELETE_NODE cache
+DELETE_NODE pipeline
+
+### Input:
+Initialize analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline
+
+### Input:
+Create node db, connect it to pipeline, then remove user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE user-profile
+
+### Input:
+Add logging, attach it to analytics, then disconnect cache from db and delete pipeline.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DISCONNECT cache db
+DELETE_NODE pipeline
+
+### Input:
+Start user-profile, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node analytics, attach it to payments, then disconnect db from logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics payments
+DISCONNECT db logging
+
+### Input:
+Add db, connect it to cache, then delete user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db cache
+DELETE_NODE user-profile
+
+### Input:
+Initialize logging, attach it to pipeline, then disconnect payments from analytics.
+
+### Output:
+ADD_NODE logging
+CONNECT logging pipeline
+DISCONNECT payments analytics
+
+### Input:
+Create node pipeline, connect it to user-profile, then delete db and remove cache.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline user-profile
+DELETE_NODE db
+DELETE_NODE cache
+
+### Input:
+Add analytics, attach it to logging, then disconnect user-profile from payments.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT user-profile payments
+
+### Input:
+Start db, connect it to pipeline, then remove analytics.
+
+### Output:
+ADD_NODE db
+CONNECT db pipeline
+DELETE_NODE analytics
+
+### Input:
+Create node logging, attach it to user-profile, then add db and connect it to payments.
+
+### Output:
+ADD_NODE logging
+CONNECT logging user-profile
+ADD_NODE db
+CONNECT db payments
+
+### Input:
+Add user-profile, connect it to analytics, then disconnect cache from pipeline.
+
+### Output:
+ADD_NODE user-profile
+CONNECT user-profile analytics
+DISCONNECT cache pipeline
+
+### Input:
+Initialize analytics, attach it to db, then delete logging.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics db
+DELETE_NODE logging
+
+### Input:
+Create node db, connect it to logging, then remove payments and disconnect pipeline from user-profile.
+
+### Output:
+ADD_NODE db
+CONNECT db logging
+DELETE_NODE payments
+DISCONNECT pipeline user-profile
+
+### Input:
+Add logging, attach it to analytics, then delete cache.
+
+### Output:
+ADD_NODE logging
+CONNECT logging analytics
+DELETE_NODE cache
+
+### Input:
+Start pipeline, connect it to db, then remove user-profile.
+
+### Output:
+ADD_NODE pipeline
+CONNECT pipeline db
+DELETE_NODE user-profile
+
+### Input:
+Create node analytics, attach it to logging, then disconnect payments from pipeline.
+
+### Output:
+ADD_NODE analytics
+CONNECT analytics logging
+DISCONNECT payments pipeline

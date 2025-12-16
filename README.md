@@ -135,7 +135,7 @@ gpt-agent/
 │   ├── 📄 module_commands.txt   # Sample: Command patterns
 │   └── 📄 README.md             # Data folder documentation
 │
-├── 📁 agent-gpt2/               # 🔒 Trained model output (gitignored)
+├── 📁 agent-trained/               # 🔒 Trained model output (gitignored)
 │   ├── config.json              # Model configuration
 │   ├── model.safetensors        # Model weights (~300MB)
 │   ├── tokenizer.json           # Tokenizer configuration
@@ -146,7 +146,7 @@ gpt-agent/
 
 ### Key Folders:
 - **`data/`**: Put your `.txt` training files here
-- **`agent-gpt2/`**: Your trained model saves here (excluded from git due to size)
+- **`agent-trained/`**: Your trained model saves here (excluded from git due to size)
 
 ---
 
@@ -234,7 +234,7 @@ Epoch 2/2: 100%|████████████| 75/75 [02:10<00:00,  1.74s
 ✅ Epoch 2 completed. Average loss: 2.8912
 
 💾 Saving trained model...
-✨ Training complete! Model saved to './agent-gpt2/'
+✨ Training complete! Model saved to './agent-trained/'
 ```
 
 **What the output means:**
@@ -248,7 +248,7 @@ After training finishes, verify your model was saved:
 
 ```bash
 # Check that model files exist
-ls -lh agent-gpt2/
+ls -lh agent-trained/
 
 # You should see:
 # - config.json
@@ -262,7 +262,7 @@ ls -lh agent-gpt2/
 
 ## 🚀 Quick Start - Using Your Model
 
-Once you've trained a model (or if you have a pre-trained model in `agent-gpt2/`), you can generate text using these methods:
+Once you've trained a model (or if you have a pre-trained model in `agent-trained/`), you can generate text using these methods:
 
 ### Method 1: Using the Inference Script (Recommended) ⭐
 
@@ -296,8 +296,8 @@ For experimentation and custom generation:
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 
 # Load your trained model
-model = GPT2LMHeadModel.from_pretrained("./agent-gpt2")
-tokenizer = GPT2TokenizerFast.from_pretrained("./agent-gpt2")
+model = GPT2LMHeadModel.from_pretrained("./agent-trained")
+tokenizer = GPT2TokenizerFast.from_pretrained("./agent-trained")
 
 # Set padding token
 tokenizer.pad_token = tokenizer.eos_token
@@ -352,7 +352,7 @@ outputs = model.generate(inputs['input_ids'], max_length=100, do_sample=False)
 2. Reads your text files from `data/` folder
 3. Converts text to numbers (tokenization)
 4. Trains the model on your data
-5. Saves the fine-tuned model to `agent-gpt2/`
+5. Saves the fine-tuned model to `agent-trained/`
 
 **Key sections:**
 - Lines 28-40: Load model and tokenizer
@@ -377,7 +377,7 @@ Prevents the "mutex lock failed" error common on macOS by configuring the enviro
 
 **What it does:**
 1. Sets environment variables to prevent macOS threading errors
-2. Loads your trained model from `agent-gpt2/` folder
+2. Loads your trained model from `agent-trained/` folder
 3. Takes a text prompt and generates continuation
 4. Displays the generated text with helpful tips
 
@@ -397,7 +397,7 @@ Prevents the "mutex lock failed" error common on macOS by configuring the enviro
 
 **What it does:**
 - Runs `use_model.py` in an isolated Docker container
-- Mounts your `agent-gpt2/` folder and inference script
+- Mounts your `agent-trained/` folder and inference script
 - Installs dependencies automatically
 - Avoids all local environment issues
 
@@ -420,7 +420,7 @@ Ensures consistent behavior across different computers and operating systems.
 
 **What it does:**
 - Simplifies Docker training commands
-- Mounts your `data/` and `agent-gpt2/` folders
+- Mounts your `data/` and `agent-trained/` folders
 - Sets memory limits (4GB max)
 - Configures volume permissions
 
@@ -681,12 +681,12 @@ Loss stays high (>5.0) or increases
 
 **Symptoms:**
 ```
-FileNotFoundError: agent-gpt2/ not found
+FileNotFoundError: agent-trained/ not found
 ```
 
 **Solutions:**
 - ✅ Train a model first using `docker-compose up` or `python3 train.py`
-- ✅ Verify `agent-gpt2/` folder exists: `ls -lh agent-gpt2/`
+- ✅ Verify `agent-trained/` folder exists: `ls -lh agent-trained/`
 - ✅ Check that model files are present in the folder
 
 #### 8. Generated Text is Nonsense
