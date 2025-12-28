@@ -78,13 +78,8 @@ def generate_examples(
                 node_b=node_b
             )
 
-            # Construct training example
-            example = f"""### Input:
-{text}
-
-### Output:
-{output_template.format(node_a=node_a, node_b=node_b)}
-"""
+            # Construct training example (single line format)
+            example = f"### Input: {text} ### Output: {output_template.format(node_a=node_a, node_b=node_b)}"
 
         # ------------------------------------------
         # Single-node case (ADD_NODE / DELETE_NODE)
@@ -96,13 +91,8 @@ def generate_examples(
             # Fill the natural language template
             text = random.choice(templates).format(node=node)
 
-            # Construct training example
-            example = f"""### Input:
-{text}
-
-### Output:
-{output_template.format(node=node)}
-"""
+            # Construct training example (single line format)
+            example = f"### Input: {text} ### Output: {output_template.format(node=node)}"
 
         examples.append(example)
 

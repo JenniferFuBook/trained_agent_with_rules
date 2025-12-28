@@ -10,7 +10,7 @@ python3 scripts/generate_dataset.py \
   --templates scripts/add_templates.txt \
   --output data/add_node.txt \
   --command "ADD_NODE {node}" \
-  --count 10000
+  --count 1500
 
 # Delete node examples
 python3 scripts/generate_dataset.py \
@@ -18,7 +18,7 @@ python3 scripts/generate_dataset.py \
   --templates scripts/delete_templates.txt \
   --output data/delete_node.txt \
   --command "DELETE_NODE {node}" \
-  --count 10000
+  --count 1500
 
 # Connect nodes examples
 python3 scripts/generate_dataset.py \
@@ -26,7 +26,7 @@ python3 scripts/generate_dataset.py \
   --templates scripts/connect_templates.txt \
   --output data/connect.txt \
   --command "CONNECT {node_a} {node_b}" \
-  --count 10000
+  --count 1500
 
 # Disconnect nodes examples
 python3 scripts/generate_dataset.py \
@@ -34,4 +34,4 @@ python3 scripts/generate_dataset.py \
   --templates scripts/disconnect_templates.txt \
   --output data/disconnect.txt \
   --command "DISCONNECT {node_a} {node_b}" \
-  --count 10000
+  --count 1500

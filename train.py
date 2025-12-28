@@ -57,12 +57,28 @@ def main():
         """
         # Split input/output
         texts = examples["text"]
+        inputs = []
+        targets = []
+
+        for text in texts:
+            # Split on "### Output:" to separate input from output
+            parts = text.split("### Output:")
+            if len(parts) == 2:
+                # Input is everything before "### Output:"
+                inputs.append(parts[0].strip())
+                # Target is everything after "### Output:"
+                targets.append(parts[1].strip())
+            else:
+                # Fallback if format is unexpected
+                inputs.append(text)
+                targets.append("")
+
         model_inputs = tokenizer(
-            texts, truncation=True, padding="max_length", max_length=256
+            inputs, truncation=True, padding="max_length", max_length=128
         )
         with tokenizer.as_target_tokenizer():
             labels = tokenizer(
-                texts, truncation=True, padding="max_length", max_length=256
+                targets, truncation=True, padding="max_length", max_length=128
             )
         model_inputs["labels"] = labels["input_ids"]
         return model_inputs

@@ -23,25 +23,35 @@ def generate_rules(natural_input, max_length=150, temperature=0.7):
     Convert natural language instruction into structured commands:
     ADD_NODE, DELETE_NODE, CONNECT, DISCONNECT
     """
-    # Construct a clear instruction prompt
-    prompt = f"""Translate the following instruction into structured commands using only ADD_NODE, DELETE_NODE, CONNECT, DISCONNECT.
-
-Instruction: {natural_input}
-"""
+    # Construct a clear instruction prompt matching training format
+    # Only include the input part, model will generate the output
+    prompt = f"### Input: {natural_input}"
     # Tokenize input
     inputs = tokenizer(prompt, return_tensors="pt")
 
     # Generate output
     outputs = model.generate(
         **inputs,
-        max_length=max_length,
-        do_sample=True,
-        temperature=temperature,
-        eos_token_id=tokenizer.eos_token_id
+        max_new_tokens=100,  # Generate up to 100 NEW tokens
+        min_new_tokens=1,    # Force at least 1 token
+        do_sample=False,      # Greedy decoding for deterministic output
+        pad_token_id=tokenizer.pad_token_id,
+        num_beams=1
     )
+
+    # Debug: print token-level information
+    print(f"🔍 Input token IDs: {inputs['input_ids'][0].tolist()}")
+    print(f"🔍 Input tokens: {tokenizer.convert_ids_to_tokens(inputs['input_ids'][0])}")
+    print(f"🔍 Output token IDs: {outputs[0].tolist()}")
+    print(f"🔍 Output tokens: {tokenizer.convert_ids_to_tokens(outputs[0])}")
+    print(f"🔍 Number of output tokens: {len(outputs[0])}")
 
     # Decode generated text
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
+
+    # Debug: print raw model output
+    print(f"🔍 Raw model output: '{text}'")
+    print(f"🔍 Output length: {len(text)} characters")
 
     # Keep only structured commands
     commands = []
@@ -55,7 +65,7 @@ Instruction: {natural_input}
 # Step 4: Main execution
 # ==================================================
 def main():
-    prompt = "Add node cache and db, connect them, then delete api."
+    prompt = "Add node cache, connect it to db, then delete api."
 
     print(f"📝 Input: {prompt}")
     print("-" * 60)
