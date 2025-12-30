@@ -1,16 +1,16 @@
 ### Input: Add node analytics, connect it to user-profile, then delete db. ### Output: ADD_NODE analytics | CONNECT analytics user-profile | DELETE_NODE db
-### Input: Initialize logging, attach it to cache, and finally remove api. ### Output: ADD_NODE logging | CONNECT logging cache | DELETE_NODE api
+### Input: Initialize logging, attach it to cache, and finally, remove api. ### Output: ADD_NODE logging | CONNECT logging cache | DELETE_NODE api
 ### Input: Create node payments, link it with pipeline, then disconnect cache from db. ### Output: ADD_NODE payments | CONNECT payments pipeline | DISCONNECT cache db
 ### Input: Start auth, connect it to api, after that remove user-profile. ### Output: ADD_NODE auth | CONNECT auth api | DELETE_NODE user-profile
 ### Input: Add db node and connect it to logging. Then delete analytics. ### Output: ADD_NODE db | CONNECT db logging | DELETE_NODE analytics
 ### Input: Initialize analytics, attach it to payments, and then disconnect pipeline from user-profile. ### Output: ADD_NODE analytics | CONNECT analytics payments | DISCONNECT pipeline user-profile
-### Input: Add cache node, link it with db, then remove api, and finally connect cache to search. ### Output: ADD_NODE cache | CONNECT cache db | DELETE_NODE api | CONNECT cache search
+### Input: Add cache node, link it with db, then remove api, and finally, connect cache to search. ### Output: ADD_NODE cache | CONNECT cache db | DELETE_NODE api | CONNECT cache search
 ### Input: Start logging, connect it to search, then delete auth immediately. ### Output: ADD_NODE logging | CONNECT logging search | DELETE_NODE auth
 ### Input: Create pipeline, attach it to analytics, and disconnect db from cache afterwards. ### Output: ADD_NODE pipeline | CONNECT pipeline analytics | DISCONNECT db cache
 ### Input: Add user-profile, connect it to payments, then delete logging and remove db. ### Output: ADD_NODE user-profile | CONNECT user-profile payments | DELETE_NODE logging | DELETE_NODE db
 ### Input: Create node search, link it to analytics, then connect it to cache. ### Output: ADD_NODE search | CONNECT search analytics | CONNECT search cache
 ### Input: Initialize payments, attach it to pipeline, and remove api afterwards. ### Output: ADD_NODE payments | CONNECT payments pipeline | DELETE_NODE api
-### Input: Add node auth, connect it to db, disconnect cache from logging, and finally delete user-profile. ### Output: ADD_NODE auth | CONNECT auth db | DISCONNECT cache logging | DELETE_NODE user-profile
+### Input: Add node auth, connect it to db, disconnect cache from logging, and finally, delete user-profile. ### Output: ADD_NODE auth | CONNECT auth db | DISCONNECT cache logging | DELETE_NODE user-profile
 ### Input: Start db, link it with logging, then delete pipeline. ### Output: ADD_NODE db | CONNECT db logging | DELETE_NODE pipeline
 ### Input: Create node cache, attach it to analytics, and then remove payments. ### Output: ADD_NODE cache | CONNECT cache analytics | DELETE_NODE payments
 ### Input: Initialize user-profile, connect it to search, disconnect api from auth. ### Output: ADD_NODE user-profile | CONNECT user-profile search | DISCONNECT api auth

@@ -33,7 +33,7 @@ def main():
     # ============================
     print("📦 Loading Flan-T5 model and tokenizer...")
     model_name = "google/flan-t5-small"
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    tokenizer = AutoTokenizer.from_pretrained(model_name, clean_up_tokenization_spaces=False)
     model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 
     # Ensure model uses pad token
@@ -74,13 +74,12 @@ def main():
                 targets.append("")
 
         model_inputs = tokenizer(
-            inputs, truncation=True, padding="max_length", max_length=128
+            inputs,
+            text_target=targets,
+            truncation=True,
+            padding="max_length",
+            max_length=128
         )
-        with tokenizer.as_target_tokenizer():
-            labels = tokenizer(
-                targets, truncation=True, padding="max_length", max_length=128
-            )
-        model_inputs["labels"] = labels["input_ids"]
         return model_inputs
 
     print("🔢 Tokenizing dataset...")

@@ -12,7 +12,7 @@ os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 # ==================================================
 model_name = "./agent-trained"
 print(f"🤖 Loading model {model_name}...\n")
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoTokenizer.from_pretrained(model_name, clean_up_tokenization_spaces=False)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 print("✅ Model loaded successfully!\n")
 
