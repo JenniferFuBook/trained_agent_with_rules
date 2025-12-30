@@ -1,4 +1,5 @@
 import os
+import argparse
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 # ==================================================
@@ -65,11 +66,13 @@ def generate_rules(natural_input, max_length=150, temperature=0.7):
 # Step 4: Main execution
 # ==================================================
 def main():
-    prompt = "Add node cache, connect it to db, then delete api."
+    parser = argparse.ArgumentParser(description="Convert natural language to structured commands")
+    parser.add_argument("prompt", type=str, help="Natural language instruction to convert")
+    args = parser.parse_args()
 
-    print(f"📝 Input: {prompt}")
+    print(f"📝 Input: {args.prompt}")
     print("-" * 60)
-    result = generate_rules(prompt)
+    result = generate_rules(args.prompt)
     print(f"✨ Output:\n{result}")
     print("-" * 60)
 
